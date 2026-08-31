@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 from urllib.parse import urlparse
 
@@ -14,6 +15,19 @@ class WorkdayAdapter:
     def __init__(self, transport):
         self.transport = transport
         self.metrics = {}
+
+    @staticmethod
+    def _req_id(item: dict, external_path: str) -> str:
+        direct = str(item.get("jobReqId") or item.get("id") or "").strip()
+        if direct:
+            return direct
+        for value in item.get("bulletFields") or []:
+            match = re.search(r"\b([A-Za-z]{1,8}[-_]?\d{3,}(?:-\d+)?)\b", str(value))
+            if match:
+                return match.group(1)
+        tail = external_path.rstrip("/").rsplit("/", 1)[-1]
+        candidate = tail.rsplit("_", 1)[-1]
+        return candidate if re.search(r"\d", candidate) else ""
 
     @staticmethod
     def _parts(source: Source) -> tuple[str, str, str, str]:
@@ -48,7 +62,7 @@ class WorkdayAdapter:
         rows: list[dict] = []
         for item in items:
             external_path = str(item.get("externalPath") or "").strip()
-            req_id = str(item.get("jobReqId") or item.get("id") or "").strip()
+            req_id = self._req_id(item, external_path)
             if not external_path or not req_id or "/job/" not in external_path:
                 self.metrics["malformed_rejected"] += 1
                 continue
