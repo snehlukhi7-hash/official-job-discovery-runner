@@ -1,17 +1,17 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 1,
-  "unique_keys": 1,
+  "artifact_total": 4,
+  "unique_keys": 4,
   "sources_total": 1,
   "source_errors": [],
   "source_metrics": [
     {
-      "company": "Raymond James",
+      "company": "M&T Bank",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 1,
+      "accepted": 4,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
+      "freshness_rejected": 36,
       "geography_rejected": 0,
       "malformed_rejected": 0
     }
