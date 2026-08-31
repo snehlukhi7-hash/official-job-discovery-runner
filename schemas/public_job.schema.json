@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/public_job.schema.json",
+  "title": "Public official job record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "company",
+    "title",
+    "req_id",
+    "official_url",
+    "ats",
+    "location",
+    "country",
+    "employment_type",
+    "salary_text",
+    "description",
+    "posted_on",
+    "start_date",
+    "fetched_at",
+    "freshness_evidence_scope",
+    "evidence_url",
+    "dedupe_key"
+  ],
+  "properties": {
+    "company": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "req_id": {"type": "string", "minLength": 1},
+    "official_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "ats": {"type": "string", "minLength": 1},
+    "location": {"type": "string", "minLength": 1},
+    "country": {"type": "string", "const": "US"},
+    "employment_type": {"type": ["string", "null"]},
+    "salary_text": {"type": ["string", "null"]},
+    "description": {"type": "string", "minLength": 1},
+    "posted_on": {"type": ["string", "null"]},
+    "start_date": {"type": ["string", "null"], "format": "date"},
+    "fetched_at": {"type": "string", "format": "date-time"},
+    "freshness_evidence_scope": {"type": ["string", "null"]},
+    "evidence_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "dedupe_key": {"type": "string", "minLength": 1}
+  }
+}
