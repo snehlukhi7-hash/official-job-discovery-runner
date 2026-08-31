@@ -42,6 +42,14 @@ class WorkdayAdapter:
         listing = f"https://{parsed.netloc}/wday/cxs/{tenant}/{site}/jobs"
         return parsed.netloc, tenant, site, listing
 
+    @staticmethod
+    def _structured_country_code(detail: dict) -> str:
+        location = detail.get("jobRequisitionLocation") or {}
+        country = location.get("country") or {}
+        if not isinstance(country, dict):
+            return ""
+        return str(country.get("alpha2Code") or country.get("code") or "").strip().upper()
+
     async def discover(self, source: Source, fetched_at: datetime) -> list[dict]:
         host, tenant, site, listing_url = self._parts(source)
         page_size = 20
@@ -100,13 +108,14 @@ class WorkdayAdapter:
             start_date = str(detail.get("startDate") or "").strip()
             freshness = classify_workday_detail(posted_on, start_date, fetched_at)
             location = str(detail.get("location") or item.get("locationsText") or "").strip()
+            country_code = self._structured_country_code(detail)
             description = str(
                 detail.get("jobDescription") or detail.get("description") or ""
             ).strip()
             if freshness.status != "VERIFIED":
                 self.metrics["freshness_rejected"] += 1
                 continue
-            if not is_verified_us_location(location):
+            if (country_code and country_code != "US") or not is_verified_us_location(location):
                 self.metrics["geography_rejected"] += 1
                 continue
             official_path = external_path if external_path.startswith("/") else "/" + external_path
