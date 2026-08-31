@@ -13,6 +13,80 @@
     "company": "PayPal",
     "ats": "workday",
     "careers_url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs"
+  },
+  {
+    "company": "JLL",
+    "ats": "workday",
+    "careers_url": "https://jll.wd1.myworkdayjobs.com/en-US/jllcareers"
+  },
+  {
+    "company": "ALS Global",
+    "ats": "workday",
+    "careers_url": "https://alsglobal.wd103.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Brookfield",
+    "ats": "workday",
+    "careers_url": "https://brookfield.wd5.myworkdayjobs.com/en-US/bpandc"
+  },
+  {
+    "company": "Morgan Stanley",
+    "ats": "workday",
+    "careers_url": "https://ms.wd5.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Deutsche Bank",
+    "ats": "workday",
+    "careers_url": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite"
+  },
+  {
+    "company": "GEICO",
+    "ats": "workday",
+    "careers_url": "https://geico.wd1.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Wellington Management",
+    "ats": "workday",
+    "careers_url": "https://wellington.wd5.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Withum",
+    "ats": "workday",
+    "careers_url": "https://withum.wd108.myworkdayjobs.com/en-US/Withum_Careers_Page"
+  },
+  {
+    "company": "CarMax",
+    "ats": "workday",
+    "careers_url": "https://carmax.wd1.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Chevron",
+    "ats": "workday",
+    "careers_url": "https://chevron.wd5.myworkdayjobs.com/en-US/jobs"
+  },
+  {
+    "company": "Raymond James",
+    "ats": "workday",
+    "careers_url": "https://raymondjames.wd1.myworkdayjobs.com/en-US/RaymondJamesCareers"
+  },
+  {
+    "company": "Leidos",
+    "ats": "workday",
+    "careers_url": "https://leidos.wd5.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "Transamerica",
+    "ats": "workday",
+    "careers_url": "https://transamerica.wd5.myworkdayjobs.com/en-US/US"
+  },
+  {
+    "company": "Greystar",
+    "ats": "workday",
+    "careers_url": "https://greystar.wd1.myworkdayjobs.com/en-US/External"
+  },
+  {
+    "company": "T. Rowe Price",
+    "ats": "workday",
+    "careers_url": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice"
   }
 ]
-
