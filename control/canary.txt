@@ -1,1 +1,1 @@
-Discovery-only canary trigger. Sanitized READY handoff run 8.
+expanded-source-wave-2026-08-31T05:10:44.801Z
