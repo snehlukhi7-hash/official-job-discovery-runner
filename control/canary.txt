@@ -1,1 +1,1 @@
-Discovery-only canary trigger. Expanded official source run 5.
+Discovery-only canary trigger. Exhaustive pagination run 6.
