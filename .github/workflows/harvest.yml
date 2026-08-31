@@ -1,6 +1,9 @@
 name: Official public job harvest
 
 on:
+  push:
+    branches: [main]
+    paths: [control/canary.txt]
   workflow_dispatch:
     inputs:
       batch:
@@ -89,4 +92,3 @@ jobs:
           path: output/
           retention-days: 1
           if-no-files-found: error
-
