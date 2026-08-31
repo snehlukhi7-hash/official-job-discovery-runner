@@ -1,0 +1,148 @@
+{
+  "status": "BLOCKED_NO_READY_ARTIFACT",
+  "artifact_total": 0,
+  "unique_keys": 0,
+  "sources_total": 30,
+  "source_errors": [
+    {
+      "company": "Vanta",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Postman",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Docker",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Contentful",
+      "error": "HTTPError"
+    },
+    {
+      "company": "CircleCI",
+      "error": "HTTPError"
+    },
+    {
+      "company": "LaunchDarkly",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Harness",
+      "error": "HTTPError"
+    },
+    {
+      "company": "ThoughtSpot",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Fivetran",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Amplitude",
+      "error": "HTTPError"
+    },
+    {
+      "company": "SingleStore",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Sumo Logic",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Sentry",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Yext",
+      "error": "HTTPError"
+    },
+    {
+      "company": "OpenGov",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Mixpanel",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Lucid",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Highwire",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Lattice",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Sprout Social",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Braze",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Moveworks",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Navan",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Benchling",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Maven Clinic",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Grafana Labs",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Cockroach Labs",
+      "error": "HTTPError"
+    }
+  ],
+  "source_metrics": [
+    {
+      "company": "Palantir",
+      "listing_count": 307,
+      "detail_checked": 0,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 307,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Outreach",
+      "listing_count": 33,
+      "detail_checked": 0,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 33,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Clari",
+      "listing_count": 0,
+      "detail_checked": 0,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 0,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    }
+  ]
+}
