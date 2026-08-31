@@ -88,5 +88,435 @@
     "company": "T. Rowe Price",
     "ats": "workday",
     "careers_url": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice"
+  },
+  {
+    "company": "NVIDIA",
+    "ats": "workday",
+    "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
+  },
+  {
+    "company": "Microsoft",
+    "ats": "workday",
+    "careers_url": "https://microsoft.wd10.myworkdayjobs.com/en-US/Microsoft"
+  },
+  {
+    "company": "TikTok",
+    "ats": "workday",
+    "careers_url": "https://bytedance.wd3.myworkdayjobs.com/TikTok"
+  },
+  {
+    "company": "Netflix",
+    "ats": "workday",
+    "careers_url": "https://netflix.wd5.myworkdayjobs.com/jobs"
+  },
+  {
+    "company": "Adobe",
+    "ats": "workday",
+    "careers_url": "https://adobe.wd5.myworkdayjobs.com/external_experienced"
+  },
+  {
+    "company": "Cisco",
+    "ats": "workday",
+    "careers_url": "https://cisco.wd1.myworkdayjobs.com/Cisco_Careers"
+  },
+  {
+    "company": "Oracle",
+    "ats": "workday",
+    "careers_url": "https://oracle.wd1.myworkdayjobs.com/Careers"
+  },
+  {
+    "company": "Salesforce",
+    "ats": "workday",
+    "careers_url": "https://salesforce.wd1.myworkdayjobs.com/Salesforce_Careers"
+  },
+  {
+    "company": "Mastercard",
+    "ats": "workday",
+    "careers_url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers"
+  },
+  {
+    "company": "AMD",
+    "ats": "workday",
+    "careers_url": "https://amd.wd1.myworkdayjobs.com/AMD"
+  },
+  {
+    "company": "Qualcomm",
+    "ats": "workday",
+    "careers_url": "https://qualcomm.wd5.myworkdayjobs.com/External"
+  },
+  {
+    "company": "SAP",
+    "ats": "workday",
+    "careers_url": "https://sap.wd1.myworkdayjobs.com/SAPCareers"
+  },
+  {
+    "company": "Dell",
+    "ats": "workday",
+    "careers_url": "https://dell.wd1.myworkdayjobs.com/External"
+  },
+  {
+    "company": "HP",
+    "ats": "workday",
+    "careers_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite"
+  },
+  {
+    "company": "Lenovo",
+    "ats": "workday",
+    "careers_url": "https://lenovo.wd3.myworkdayjobs.com/Lenovo_Jobs"
+  },
+  {
+    "company": "ServiceNow",
+    "ats": "workday",
+    "careers_url": "https://servicenow.wd1.myworkdayjobs.com/servicenow"
+  },
+  {
+    "company": "Workday",
+    "ats": "workday",
+    "careers_url": "https://workday.wd5.myworkdayjobs.com/Workday"
+  },
+  {
+    "company": "Intuit",
+    "ats": "workday",
+    "careers_url": "https://intuit.wd5.myworkdayjobs.com/Intuit_Careers"
+  },
+  {
+    "company": "Autodesk",
+    "ats": "workday",
+    "careers_url": "https://autodesk.wd1.myworkdayjobs.com/Ext"
+  },
+  {
+    "company": "Splunk",
+    "ats": "workday",
+    "careers_url": "https://splunk.wd1.myworkdayjobs.com/splunk"
+  },
+  {
+    "company": "JPMorgan",
+    "ats": "workday",
+    "careers_url": "https://jpmc.wd1.myworkdayjobs.com/JPMorgan_Careers"
+  },
+  {
+    "company": "Bank of America",
+    "ats": "workday",
+    "careers_url": "https://ghr.wd1.myworkdayjobs.com/us-emplsv"
+  },
+  {
+    "company": "Capital One",
+    "ats": "workday",
+    "careers_url": "https://capitalone.wd1.myworkdayjobs.com/Capital_One"
+  },
+  {
+    "company": "Booz Allen Hamilton",
+    "ats": "workday",
+    "careers_url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs"
+  },
+  {
+    "company": "Deloitte",
+    "ats": "workday",
+    "careers_url": "https://deloitte.wd1.myworkdayjobs.com/DeloitteCareers"
+  },
+  {
+    "company": "PwC",
+    "ats": "workday",
+    "careers_url": "https://pwc.wd1.myworkdayjobs.com/Global_Experienced_Careers"
+  },
+  {
+    "company": "Accenture",
+    "ats": "workday",
+    "careers_url": "https://accenture.wd3.myworkdayjobs.com/AccentureCareers"
+  },
+  {
+    "company": "Johnson & Johnson",
+    "ats": "workday",
+    "careers_url": "https://jnjc.wd5.myworkdayjobs.com/JNJC_External"
+  },
+  {
+    "company": "Pfizer",
+    "ats": "workday",
+    "careers_url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers"
+  },
+  {
+    "company": "Merck",
+    "ats": "workday",
+    "careers_url": "https://merck.wd5.myworkdayjobs.com/Search"
+  },
+  {
+    "company": "AbbVie",
+    "ats": "workday",
+    "careers_url": "https://abbvie.wd5.myworkdayjobs.com/abbvie_careers"
+  },
+  {
+    "company": "Bristol Myers Squibb",
+    "ats": "workday",
+    "careers_url": "https://bms.wd1.myworkdayjobs.com/Careers"
+  },
+  {
+    "company": "UnitedHealth Group",
+    "ats": "workday",
+    "careers_url": "https://uhg.wd5.myworkdayjobs.com/uhg"
+  },
+  {
+    "company": "CVS Health",
+    "ats": "workday",
+    "careers_url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers"
+  },
+  {
+    "company": "Medtronic",
+    "ats": "workday",
+    "careers_url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers"
+  },
+  {
+    "company": "Target",
+    "ats": "workday",
+    "careers_url": "https://target.wd5.myworkdayjobs.com/targetcareers"
+  },
+  {
+    "company": "Walmart",
+    "ats": "workday",
+    "careers_url": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal"
+  },
+  {
+    "company": "Starbucks",
+    "ats": "workday",
+    "careers_url": "https://starbucks.wd5.myworkdayjobs.com/starbucks"
+  },
+  {
+    "company": "PepsiCo",
+    "ats": "workday",
+    "careers_url": "https://pepsico.wd1.myworkdayjobs.com/pepsico"
+  },
+  {
+    "company": "Procter & Gamble",
+    "ats": "workday",
+    "careers_url": "https://pg.wd1.myworkdayjobs.com/pg-careers"
+  },
+  {
+    "company": "Boeing",
+    "ats": "workday",
+    "careers_url": "https://boeing.wd1.myworkdayjobs.com/external_careers"
+  },
+  {
+    "company": "Samsung",
+    "ats": "workday",
+    "careers_url": "https://samsung.wd3.myworkdayjobs.com/Samsung_Careers"
+  },
+  {
+    "company": "Sony",
+    "ats": "workday",
+    "careers_url": "https://sony.wd5.myworkdayjobs.com/SonyCareers"
+  },
+  {
+    "company": "Ford",
+    "ats": "workday",
+    "careers_url": "https://ford.wd5.myworkdayjobs.com/Ford_Careers"
+  },
+  {
+    "company": "General Motors",
+    "ats": "workday",
+    "careers_url": "https://generalmotors.wd1.myworkdayjobs.com/Careers"
+  },
+  {
+    "company": "Honeywell",
+    "ats": "workday",
+    "careers_url": "https://honeywell.wd5.myworkdayjobs.com/Careers"
+  },
+  {
+    "company": "CACI",
+    "ats": "workday",
+    "careers_url": "https://caci.wd5.myworkdayjobs.com/CACI_External"
+  },
+  {
+    "company": "Peraton",
+    "ats": "workday",
+    "careers_url": "https://peraton.wd5.myworkdayjobs.com/Peraton_Careers"
+  },
+  {
+    "company": "SAIC",
+    "ats": "workday",
+    "careers_url": "https://saic.wd5.myworkdayjobs.com/SAIC_Careers"
+  },
+  {
+    "company": "Asurion",
+    "ats": "workday",
+    "careers_url": "https://asurion.wd5.myworkdayjobs.com/USExtPrivate"
+  },
+  {
+    "company": "Clio",
+    "ats": "workday",
+    "careers_url": "https://clio.wd3.myworkdayjobs.com/ClioCareerSite"
+  },
+  {
+    "company": "Copart",
+    "ats": "workday",
+    "careers_url": "https://copart.wd12.myworkdayjobs.com/Copart"
+  },
+  {
+    "company": "DataRobot",
+    "ats": "workday",
+    "careers_url": "https://datarobot.wd1.myworkdayjobs.com/DataRobot_External_Careers"
+  },
+  {
+    "company": "Dematic",
+    "ats": "workday",
+    "careers_url": "https://kiongroup.wd3.myworkdayjobs.com/KION_SCS"
+  },
+  {
+    "company": "Equifax",
+    "ats": "workday",
+    "careers_url": "https://equifax.wd5.myworkdayjobs.com/External"
+  },
+  {
+    "company": "Flex",
+    "ats": "workday",
+    "careers_url": "https://flextronics.wd1.myworkdayjobs.com/Careers"
+  },
+  {
+    "company": "GE Aerospace",
+    "ats": "workday",
+    "careers_url": "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite"
+  },
+  {
+    "company": "IFF",
+    "ats": "workday",
+    "careers_url": "https://iff.wd5.myworkdayjobs.com/IFF_Careers"
+  },
+  {
+    "company": "KBR",
+    "ats": "workday",
+    "careers_url": "https://kbr.wd5.myworkdayjobs.com/KBR_Careers"
+  },
+  {
+    "company": "KION Group",
+    "ats": "workday",
+    "careers_url": "https://kiongroup.wd3.myworkdayjobs.com/KIONGroup"
+  },
+  {
+    "company": "PPG",
+    "ats": "workday",
+    "careers_url": "https://ppg.wd5.myworkdayjobs.com/ppg_careers"
+  },
+  {
+    "company": "RBC",
+    "ats": "workday",
+    "careers_url": "https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1"
+  },
+  {
+    "company": "Revvity",
+    "ats": "workday",
+    "careers_url": "https://revvity.wd103.myworkdayjobs.com/external"
+  },
+  {
+    "company": "Campbell's",
+    "ats": "workday",
+    "careers_url": "https://campbellsoup.wd5.myworkdayjobs.com/ExternalCareers_GlobalSite"
+  },
+  {
+    "company": "Home Depot",
+    "ats": "workday",
+    "careers_url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot"
+  },
+  {
+    "company": "Disney",
+    "ats": "workday",
+    "careers_url": "https://disney.wd5.myworkdayjobs.com/disneycareer"
+  },
+  {
+    "company": "TransUnion",
+    "ats": "workday",
+    "careers_url": "https://transunion.wd5.myworkdayjobs.com/transunion"
+  },
+  {
+    "company": "Waystar",
+    "ats": "workday",
+    "careers_url": "https://waystar.wd1.myworkdayjobs.com/Waystar"
+  },
+  {
+    "company": "Zenith American Solutions",
+    "ats": "workday",
+    "careers_url": "https://zenithamerican.wd5.myworkdayjobs.com/zas"
+  },
+  {
+    "company": "Castlight Health",
+    "ats": "workday",
+    "careers_url": "https://verawholehealth.wd1.myworkdayjobs.com/castlight"
+  },
+  {
+    "company": "Norwegian Cruise Line Holdings",
+    "ats": "workday",
+    "careers_url": "https://nclh.wd108.myworkdayjobs.com/ncl_shoreside_careers"
+  },
+  {
+    "company": "Verizon",
+    "ats": "workday",
+    "careers_url": "https://verizon.wd12.myworkdayjobs.com/frontier_career_site"
+  },
+  {
+    "company": "Arch Capital Group",
+    "ats": "workday",
+    "careers_url": "https://archgroup.wd1.myworkdayjobs.com/careers"
+  },
+  {
+    "company": "Maersk",
+    "ats": "workday",
+    "careers_url": "https://maersk.wd3.myworkdayjobs.com/maersk_careers"
+  },
+  {
+    "company": "Mass General Brigham",
+    "ats": "workday",
+    "careers_url": "https://massgeneralbrigham.wd1.myworkdayjobs.com/mgbexternal"
+  },
+  {
+    "company": "Jefferson",
+    "ats": "workday",
+    "careers_url": "https://jeffersonhealth.wd5.myworkdayjobs.com/thomasjeffersonexternal"
+  },
+  {
+    "company": "Sentara Healthcare",
+    "ats": "workday",
+    "careers_url": "https://sentara.wd1.myworkdayjobs.com/scs"
+  },
+  {
+    "company": "Marsh & McLennan Companies",
+    "ats": "workday",
+    "careers_url": "https://mmc.wd1.myworkdayjobs.com/mmc"
+  },
+  {
+    "company": "HCSC",
+    "ats": "workday",
+    "careers_url": "https://hcsc.wd1.myworkdayjobs.com/hcsc_external"
+  },
+  {
+    "company": "Children's National Hospital",
+    "ats": "workday",
+    "careers_url": "https://childrensnational.wd108.myworkdayjobs.com/cn_careers"
+  },
+  {
+    "company": "Trane Technologies",
+    "ats": "workday",
+    "careers_url": "https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers"
+  },
+  {
+    "company": "Dexcom",
+    "ats": "workday",
+    "careers_url": "https://dexcom.wd1.myworkdayjobs.com/dexcom"
+  },
+  {
+    "company": "M&T Bank",
+    "ats": "workday",
+    "careers_url": "https://mtb.wd5.myworkdayjobs.com/mtb"
+  },
+  {
+    "company": "Abbott",
+    "ats": "workday",
+    "careers_url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers2"
+  },
+  {
+    "company": "Southeastern Freight Lines",
+    "ats": "workday",
+    "careers_url": "https://sefl.wd1.myworkdayjobs.com/sefl"
+  },
+  {
+    "company": "Acxiom",
+    "ats": "workday",
+    "careers_url": "https://acxiomllc.wd5.myworkdayjobs.com/acxiomusa"
   }
 ]
