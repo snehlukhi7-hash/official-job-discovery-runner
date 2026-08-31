@@ -1,0 +1,189 @@
+{
+  "status": "READY_FOR_QUALIFICATION",
+  "artifact_total": 3,
+  "unique_keys": 3,
+  "sources_total": 18,
+  "source_errors": [],
+  "source_metrics": [
+    {
+      "company": "Intel",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Philips",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 15,
+      "freshness_rejected": 24,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "PayPal",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "JLL",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 2,
+      "identity_rejected": 0,
+      "freshness_rejected": 0,
+      "geography_rejected": 38,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "ALS Global",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Brookfield",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 12,
+      "freshness_rejected": 28,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Morgan Stanley",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 12,
+      "freshness_rejected": 28,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Deutsche Bank",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 32,
+      "geography_rejected": 8,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "GEICO",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Wellington Management",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Withum",
+      "listing_count": 97,
+      "detail_checked": 97,
+      "accepted": 0,
+      "identity_rejected": 2,
+      "freshness_rejected": 95,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "CarMax",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Chevron",
+      "listing_count": 93,
+      "detail_checked": 93,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 88,
+      "geography_rejected": 5,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Raymond James",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Leidos",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Transamerica",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Greystar",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "T. Rowe Price",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 6,
+      "freshness_rejected": 34,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    }
+  ]
+}
