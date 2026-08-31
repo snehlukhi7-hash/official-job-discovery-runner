@@ -83,6 +83,46 @@ def test_workday_adapter_rejects_list_detail_identity_mismatch():
     assert rows == []
 
 
+def test_structured_foreign_country_overrides_ambiguous_state_code():
+    source = Source("Example", "workday", "https://example.wd1.myworkdayjobs.com/jobs")
+    listing = {
+        "jobPostings": [
+            {
+                "title": "Operations Manager",
+                "externalPath": "/job/East-Bunbury-WA/REQ-1",
+                "jobReqId": "REQ-1",
+            }
+        ],
+        "total": 1,
+    }
+    detail_url = (
+        "https://example.wd1.myworkdayjobs.com/wday/cxs/example/jobs/job/"
+        "East-Bunbury-WA/REQ-1"
+    )
+    details = {
+        detail_url: {
+            "jobPostingInfo": {
+                "jobReqId": "REQ-1",
+                "postedOn": "Posted Today",
+                "startDate": "2026-08-31",
+                "location": "East Bunbury, WA",
+                "jobDescription": "Operations",
+                "jobRequisitionLocation": {
+                    "country": {"alpha2Code": "AU"}
+                },
+            }
+        }
+    }
+
+    adapter = WorkdayAdapter(FakeTransport(listing, details))
+    rows = asyncio.run(
+        adapter.discover(source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc))
+    )
+
+    assert rows == []
+    assert adapter.metrics["geography_rejected"] == 1
+
+
 def test_workday_adapter_extracts_req_id_when_listing_omits_id_fields():
     source = Source("Example", "workday", "https://example.wd1.myworkdayjobs.com/jobs")
     listing = {
