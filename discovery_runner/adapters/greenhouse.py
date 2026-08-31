@@ -84,7 +84,10 @@ class GreenhouseAdapter:
                 "fetched_at": now.isoformat().replace("+00:00", "Z"),
                 "freshness_evidence_scope": "EXACT_REQUISITION",
                 "evidence_url": f"https://boards-api.greenhouse.io/v1/boards/{board_id}/jobs/{job_id}",
-                "dedupe_key": f"{source.company.casefold()}:{req_id.casefold()}",
+                # Greenhouse may expose the same employer requisition in several
+                # separately addressable job rows (for example, one per city).
+                # The board job ID is the stable exact-posting identity.
+                "dedupe_key": f"{source.company.casefold()}:greenhouse:{job_id.casefold()}",
             })
             self.metrics["accepted"] += 1
         return rows
