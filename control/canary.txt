@@ -1,1 +1,1 @@
-Discovery-only canary trigger. Source metrics diagnostic run 3.
+Discovery-only canary trigger. Workday requisition recovery run 4.
