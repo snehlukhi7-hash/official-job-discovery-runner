@@ -1,0 +1,2 @@
+"""Official public ATS adapters."""
+
