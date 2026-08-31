@@ -1,0 +1,58 @@
+name: Fast official Greenhouse harvest
+
+on:
+  push:
+    branches: [main]
+    paths: [control/greenhouse_canary.txt]
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: greenhouse-now-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install and verify
+        run: |
+          python -m pip install -e '.[test]'
+          python -m pytest -q
+          python scripts/privacy_scan.py .
+      - name: Discover and final QA
+        run: |
+          mkdir -p output
+          discovery-runner run-batch --sources sources/greenhouse_sources.json --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+      - name: Upload Greenhouse READY artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: greenhouse-ready-${{ github.run_id }}
+          path: output/
+          retention-days: 1
+          if-no-files-found: error
+      - name: Persist Greenhouse READY payload
+        shell: bash
+        run: |
+          mkdir -p control/greenhouse-latest
+          cp output/jobs.jsonl.gz control/greenhouse-latest/jobs.jsonl.gz
+          cp output/summary.json control/greenhouse-latest/summary.json
+          python scripts/privacy_scan.py .
+          git config user.name official-job-discovery-bot
+          git config user.email actions@users.noreply.github.com
+          git add control/greenhouse-latest/jobs.jsonl.gz control/greenhouse-latest/summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update latest sanitized Greenhouse READY payload"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
