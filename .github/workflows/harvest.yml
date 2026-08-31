@@ -36,7 +36,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: public-harvest-${{ github.event_name }}-${{ github.event.schedule || inputs.batch }}
+  group: public-harvest-${{ github.sha }}
   cancel-in-progress: false
 
 jobs:
