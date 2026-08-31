@@ -1,1 +1,1 @@
-Discovery-only canary trigger. Exhaustive pagination run 6.
+Discovery-only canary trigger. Structured-country QA run 7.
