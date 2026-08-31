@@ -1,9 +1,13 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 21,
-  "unique_keys": 21,
+  "artifact_total": 9,
+  "unique_keys": 9,
   "sources_total": 245,
   "source_errors": [
+    {
+      "company": "Chevron",
+      "error": "HTTPError"
+    },
     {
       "company": "NVIDIA",
       "error": "HTTPError"
@@ -34,10 +38,6 @@
     },
     {
       "company": "Salesforce",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Mastercard",
       "error": "HTTPError"
     },
     {
@@ -197,7 +197,15 @@
       "error": "HTTPError"
     },
     {
+      "company": "Asurion",
+      "error": "HTTPError"
+    },
+    {
       "company": "DataRobot",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Equifax",
       "error": "HTTPError"
     },
     {
@@ -209,11 +217,23 @@
       "error": "HTTPError"
     },
     {
+      "company": "IFF",
+      "error": "HTTPError"
+    },
+    {
       "company": "KBR",
       "error": "HTTPError"
     },
     {
+      "company": "PPG",
+      "error": "HTTPError"
+    },
+    {
       "company": "Campbell's",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Home Depot",
       "error": "HTTPError"
     },
     {
@@ -222,6 +242,18 @@
     },
     {
       "company": "TransUnion",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Waystar",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Zenith American Solutions",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Castlight Health",
       "error": "HTTPError"
     },
     {
@@ -255,12 +287,12 @@
     {
       "company": "Philips",
       "listing_count": 40,
-      "detail_checked": 40,
+      "detail_checked": 39,
       "accepted": 0,
-      "identity_rejected": 15,
-      "freshness_rejected": 24,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
+      "identity_rejected": 13,
+      "freshness_rejected": 20,
+      "geography_rejected": 6,
+      "malformed_rejected": 1
     },
     {
       "company": "PayPal",
@@ -276,10 +308,10 @@
       "company": "JLL",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 1,
+      "accepted": 2,
       "identity_rejected": 0,
       "freshness_rejected": 0,
-      "geography_rejected": 39,
+      "geography_rejected": 38,
       "malformed_rejected": 0
     },
     {
@@ -288,8 +320,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
+      "freshness_rejected": 35,
+      "geography_rejected": 5,
       "malformed_rejected": 0
     },
     {
@@ -318,8 +350,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 31,
-      "geography_rejected": 9,
+      "freshness_rejected": 17,
+      "geography_rejected": 23,
       "malformed_rejected": 0
     },
     {
@@ -363,22 +395,12 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Chevron",
-      "listing_count": 93,
-      "detail_checked": 93,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 88,
-      "geography_rejected": 5,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Raymond James",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 1,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
+      "freshness_rejected": 40,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -398,8 +420,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -423,6 +445,16 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Mastercard",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 1,
+      "geography_rejected": 39,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Dell",
       "listing_count": 0,
       "detail_checked": 0,
@@ -433,22 +465,12 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Asurion",
-      "listing_count": 10,
-      "detail_checked": 10,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 10,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Clio",
-      "listing_count": 161,
-      "detail_checked": 161,
+      "listing_count": 158,
+      "detail_checked": 158,
       "accepted": 0,
       "identity_rejected": 28,
-      "freshness_rejected": 131,
+      "freshness_rejected": 128,
       "geography_rejected": 2,
       "malformed_rejected": 0
     },
@@ -473,43 +495,13 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Equifax",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 1,
-      "identity_rejected": 0,
-      "freshness_rejected": 38,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "IFF",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 38,
-      "geography_rejected": 2,
-      "malformed_rejected": 0
-    },
-    {
       "company": "KION Group",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "PPG",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 37,
-      "geography_rejected": 3,
+      "freshness_rejected": 33,
+      "geography_rejected": 7,
       "malformed_rejected": 0
     },
     {
@@ -533,46 +525,6 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Home Depot",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Waystar",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Zenith American Solutions",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Castlight Health",
-      "listing_count": 2,
-      "detail_checked": 2,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 2,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Norwegian Cruise Line Holdings",
       "listing_count": 40,
       "detail_checked": 40,
@@ -584,12 +536,12 @@
     },
     {
       "company": "Verizon",
-      "listing_count": 393,
-      "detail_checked": 393,
+      "listing_count": 381,
+      "detail_checked": 381,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 392,
-      "geography_rejected": 1,
+      "freshness_rejected": 379,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
@@ -604,12 +556,12 @@
     },
     {
       "company": "Maersk",
-      "listing_count": 1280,
-      "detail_checked": 1280,
+      "listing_count": 1286,
+      "detail_checked": 1286,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 1275,
-      "geography_rejected": 5,
+      "freshness_rejected": 1263,
+      "geography_rejected": 23,
       "malformed_rejected": 0
     },
     {
@@ -624,11 +576,11 @@
     },
     {
       "company": "Jefferson",
-      "listing_count": 1246,
-      "detail_checked": 1246,
-      "accepted": 10,
+      "listing_count": 1247,
+      "detail_checked": 1247,
+      "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 1236,
+      "freshness_rejected": 1245,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -648,18 +600,18 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 34,
-      "geography_rejected": 6,
+      "freshness_rejected": 29,
+      "geography_rejected": 11,
       "malformed_rejected": 0
     },
     {
       "company": "HCSC",
-      "listing_count": 105,
-      "detail_checked": 105,
+      "listing_count": 106,
+      "detail_checked": 106,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 105,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -668,8 +620,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 8,
-      "freshness_rejected": 26,
-      "geography_rejected": 6,
+      "freshness_rejected": 31,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -678,8 +630,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 1,
-      "freshness_rejected": 39,
-      "geography_rejected": 0,
+      "freshness_rejected": 35,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     },
     {
@@ -688,17 +640,17 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
+      "freshness_rejected": 38,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
       "company": "M&T Bank",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 4,
+      "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 36,
+      "freshness_rejected": 38,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -706,9 +658,9 @@
       "company": "Abbott",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 1,
+      "accepted": 0,
       "identity_rejected": 7,
-      "freshness_rejected": 32,
+      "freshness_rejected": 33,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -824,11 +776,11 @@
     },
     {
       "company": "Angi",
-      "listing_count": 38,
-      "detail_checked": 38,
+      "listing_count": 34,
+      "detail_checked": 34,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 38,
+      "freshness_rejected": 34,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1444,12 +1396,12 @@
     },
     {
       "company": "Legora",
-      "listing_count": 280,
-      "detail_checked": 280,
+      "listing_count": 281,
+      "detail_checked": 281,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 280,
-      "geography_rejected": 0,
+      "freshness_rejected": 279,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
@@ -1814,12 +1766,12 @@
     },
     {
       "company": "Satispay",
-      "listing_count": 80,
-      "detail_checked": 80,
+      "listing_count": 82,
+      "detail_checked": 82,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 80,
-      "geography_rejected": 0,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
