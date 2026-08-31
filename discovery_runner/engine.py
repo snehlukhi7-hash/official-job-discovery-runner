@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .adapters.workday import WorkdayAdapter
+from .adapters.ashby import AshbyAdapter
 from .models import Source
 from .public_artifacts import write_public_artifact
 from .transport import JsonTransport
@@ -22,11 +23,16 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
     errors = []
     source_metrics = []
     for source in sources:
-        if source.ats.casefold() != "workday":
+        adapter_type = source.ats.casefold()
+        if adapter_type not in {"workday", "ashby"}:
             errors.append({"company": source.company, "error": "UNSUPPORTED_ATS"})
             continue
         try:
-            adapter = WorkdayAdapter(transport)
+            adapter = (
+                WorkdayAdapter(transport)
+                if adapter_type == "workday"
+                else AshbyAdapter(transport)
+            )
             rows.extend(await adapter.discover(source, fetched_at))
             source_metrics.append({"company": source.company, **adapter.metrics})
         except Exception as exc:
