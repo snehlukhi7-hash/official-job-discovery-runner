@@ -81,3 +81,35 @@ def test_workday_adapter_rejects_list_detail_identity_mismatch():
 
     rows = asyncio.run(WorkdayAdapter(FakeTransport(listing, details)).discover(source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc)))
     assert rows == []
+
+
+def test_workday_adapter_extracts_req_id_when_listing_omits_id_fields():
+    source = Source("Example", "workday", "https://example.wd1.myworkdayjobs.com/jobs")
+    listing = {
+        "jobPostings": [
+            {
+                "title": "Analyst",
+                "externalPath": "/job/New-York/Analyst_JR0286635",
+                "bulletFields": ["Job ID: JR0286635"],
+            }
+        ]
+    }
+    detail_url = "https://example.wd1.myworkdayjobs.com/wday/cxs/example/jobs/job/New-York/Analyst_JR0286635"
+    details = {
+        detail_url: {
+            "jobPostingInfo": {
+                "jobReqId": "JR0286635",
+                "postedOn": "Posted Today",
+                "startDate": "2026-08-31",
+                "location": "New York, NY, United States",
+                "jobDescription": "Data",
+            }
+        }
+    }
+
+    rows = asyncio.run(
+        WorkdayAdapter(FakeTransport(listing, details)).discover(
+            source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc)
+        )
+    )
+    assert [row["req_id"] for row in rows] == ["JR0286635"]
