@@ -113,3 +113,63 @@ def test_workday_adapter_extracts_req_id_when_listing_omits_id_fields():
         )
     )
     assert [row["req_id"] for row in rows] == ["JR0286635"]
+
+
+def test_workday_adapter_paginates_listing_to_source_exhaustion():
+    source = Source("Example", "workday", "https://example.wd1.myworkdayjobs.com/jobs")
+    pages = {
+        0: {
+            "total": 21,
+            "jobPostings": [
+                {
+                    "title": f"Old role {number}",
+                    "externalPath": f"/job/Old/REQ-{number}",
+                    "jobReqId": f"REQ-{number}",
+                }
+                for number in range(1, 21)
+            ],
+        },
+        20: {
+            "total": 21,
+            "jobPostings": [
+                {
+                    "title": "Fresh analyst",
+                    "externalPath": "/job/New-York/REQ-21",
+                    "jobReqId": "REQ-21",
+                }
+            ],
+        },
+    }
+    detail_base = "https://example.wd1.myworkdayjobs.com/wday/cxs/example/jobs/job"
+
+    class PagingTransport:
+        def __init__(self):
+            self.calls = []
+
+        async def json(self, method, url, payload=None):
+            self.calls.append((method, url, payload))
+            if method == "POST":
+                return pages[payload["offset"]]
+            req_id = url.rsplit("/", 1)[-1]
+            fresh = req_id == "REQ-21"
+            return {
+                "jobPostingInfo": {
+                    "jobReqId": req_id,
+                    "postedOn": "Posted Today" if fresh else "Posted Yesterday",
+                    "startDate": "2026-08-31",
+                    "location": "New York, NY, United States",
+                    "jobDescription": "Data",
+                    "timeType": "Full time",
+                }
+            }
+
+    transport = PagingTransport()
+    adapter = WorkdayAdapter(transport)
+    rows = asyncio.run(
+        adapter.discover(source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc))
+    )
+
+    assert [row["req_id"] for row in rows] == ["REQ-21"]
+    assert [call[2]["offset"] for call in transport.calls if call[0] == "POST"] == [0, 20]
+    assert adapter.metrics["listing_count"] == 21
+    assert adapter.metrics["detail_checked"] == 21
