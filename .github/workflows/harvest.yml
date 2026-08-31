@@ -64,7 +64,14 @@ jobs:
             });
             core.setOutput('batch', batch);
             core.setOutput('date', date);
-            core.setOutput('skip', artifacts.some(item => !item.expired && item.name.startsWith(prefix)) ? 'true' : 'false');
+            core.setOutput(
+              'skip',
+              artifacts.some(item =>
+                !item.expired &&
+                item.name.startsWith(prefix) &&
+                item.workflow_run?.head_sha === context.sha
+              ) ? 'true' : 'false'
+            );
       - uses: actions/checkout@v4
         if: steps.dedupe.outputs.skip != 'true'
       - uses: actions/setup-python@v5
