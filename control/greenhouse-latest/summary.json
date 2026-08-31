@@ -1,0 +1,372 @@
+{
+  "status": "READY_FOR_QUALIFICATION",
+  "artifact_total": 58,
+  "unique_keys": 58,
+  "sources_total": 41,
+  "source_errors": [
+    {
+      "company": "Grammarly",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Rippling",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Highspot",
+      "error": "HTTPError"
+    },
+    {
+      "company": "HashiCorp",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Confluent",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Snowflake",
+      "error": "HTTPError"
+    },
+    {
+      "company": "DocuSign",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Plaid",
+      "error": "HTTPError"
+    }
+  ],
+  "source_metrics": [
+    {
+      "company": "Datadog",
+      "listing_count": 453,
+      "detail_checked": 453,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 453,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Stripe",
+      "listing_count": 574,
+      "detail_checked": 574,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 572,
+      "geography_rejected": 2,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Reddit",
+      "listing_count": 153,
+      "detail_checked": 153,
+      "accepted": 44,
+      "identity_rejected": 0,
+      "freshness_rejected": 100,
+      "geography_rejected": 9,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "MongoDB",
+      "listing_count": 407,
+      "detail_checked": 407,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 407,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Figma",
+      "listing_count": 163,
+      "detail_checked": 163,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 163,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Coinbase",
+      "listing_count": 189,
+      "detail_checked": 189,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 188,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Robinhood",
+      "listing_count": 128,
+      "detail_checked": 128,
+      "accepted": 9,
+      "identity_rejected": 0,
+      "freshness_rejected": 117,
+      "geography_rejected": 2,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "DoorDash",
+      "listing_count": 468,
+      "detail_checked": 468,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 467,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Instacart",
+      "listing_count": 123,
+      "detail_checked": 123,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 123,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Brex",
+      "listing_count": 294,
+      "detail_checked": 294,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 294,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Chime",
+      "listing_count": 63,
+      "detail_checked": 63,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 63,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Airtable",
+      "listing_count": 16,
+      "detail_checked": 16,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 16,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Webflow",
+      "listing_count": 27,
+      "detail_checked": 27,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 27,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Scale AI",
+      "listing_count": 217,
+      "detail_checked": 217,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 217,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Toast",
+      "listing_count": 310,
+      "detail_checked": 310,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 309,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Gusto",
+      "listing_count": 91,
+      "detail_checked": 91,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 91,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Flexport",
+      "listing_count": 166,
+      "detail_checked": 166,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 165,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Samsara",
+      "listing_count": 248,
+      "detail_checked": 248,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 222,
+      "geography_rejected": 26,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Duolingo",
+      "listing_count": 83,
+      "detail_checked": 83,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 83,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Okta",
+      "listing_count": 347,
+      "detail_checked": 347,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 347,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Elastic",
+      "listing_count": 340,
+      "detail_checked": 340,
+      "accepted": 2,
+      "identity_rejected": 0,
+      "freshness_rejected": 336,
+      "geography_rejected": 2,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Twilio",
+      "listing_count": 142,
+      "detail_checked": 142,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 142,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Asana",
+      "listing_count": 123,
+      "detail_checked": 123,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 123,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "GitLab",
+      "listing_count": 220,
+      "detail_checked": 220,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 220,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Fastly",
+      "listing_count": 49,
+      "detail_checked": 49,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 49,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "PagerDuty",
+      "listing_count": 43,
+      "detail_checked": 43,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 43,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Databricks",
+      "listing_count": 856,
+      "detail_checked": 856,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 848,
+      "geography_rejected": 8,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Lyft",
+      "listing_count": 169,
+      "detail_checked": 169,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 168,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Affirm",
+      "listing_count": 210,
+      "detail_checked": 210,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 208,
+      "geography_rejected": 2,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Oscar Health",
+      "listing_count": 258,
+      "detail_checked": 258,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 0,
+      "geography_rejected": 0,
+      "malformed_rejected": 258
+    },
+    {
+      "company": "Rubrik",
+      "listing_count": 128,
+      "detail_checked": 128,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 126,
+      "geography_rejected": 2,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Zscaler",
+      "listing_count": 343,
+      "detail_checked": 343,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 340,
+      "geography_rejected": 3,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Dropbox",
+      "listing_count": 41,
+      "detail_checked": 41,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 41,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    }
+  ]
+}
