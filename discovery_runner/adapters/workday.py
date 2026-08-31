@@ -44,12 +44,31 @@ class WorkdayAdapter:
 
     async def discover(self, source: Source, fetched_at: datetime) -> list[dict]:
         host, tenant, site, listing_url = self._parts(source)
-        listing = await self.transport.json(
-            "POST",
-            listing_url,
-            {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""},
-        )
-        items = listing.get("jobPostings", [])
+        page_size = 20
+        offset = 0
+        items = []
+        while True:
+            listing = await self.transport.json(
+                "POST",
+                listing_url,
+                {
+                    "appliedFacets": {},
+                    "limit": page_size,
+                    "offset": offset,
+                    "searchText": "",
+                },
+            )
+            page = listing.get("jobPostings", [])
+            if not isinstance(page, list):
+                raise ValueError("Workday jobPostings must be a list")
+            items.extend(page)
+            try:
+                total = int(listing.get("total", len(items)))
+            except (TypeError, ValueError):
+                total = len(items)
+            if not page or len(items) >= total or len(page) < page_size:
+                break
+            offset += len(page)
         self.metrics = {
             "listing_count": len(items),
             "detail_checked": 0,
