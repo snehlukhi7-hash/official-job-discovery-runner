@@ -49,3 +49,33 @@ def test_greenhouse_rejects_stale_and_unverified_remote_jobs():
     assert asyncio.run(adapter.discover(source, datetime(2026, 8, 31, 12, tzinfo=timezone.utc))) == []
     assert adapter.metrics["freshness_rejected"] == 1
     assert adapter.metrics["geography_rejected"] == 1
+
+
+def test_greenhouse_uses_exact_job_id_for_multi_location_requisition_dedupe():
+    transport = FakeTransport({"jobs": [
+        {
+            "id": 101,
+            "requisition_id": "REQ-SHARED",
+            "title": "Financial Analyst",
+            "absolute_url": "https://job-boards.greenhouse.io/example/jobs/101",
+            "location": {"name": "New York, NY"},
+            "updated_at": "2026-08-31T10:00:00Z",
+            "content": "Analyze financial controls.",
+        },
+        {
+            "id": 102,
+            "requisition_id": "REQ-SHARED",
+            "title": "Financial Analyst",
+            "absolute_url": "https://job-boards.greenhouse.io/example/jobs/102",
+            "location": {"name": "Boston, MA"},
+            "updated_at": "2026-08-31T10:00:00Z",
+            "content": "Analyze financial controls.",
+        },
+    ]})
+    source = Source(company="Example", ats="greenhouse", careers_url="https://job-boards.greenhouse.io/example")
+
+    rows = asyncio.run(GreenhouseAdapter(transport).discover(
+        source, datetime(2026, 8, 31, 12, tzinfo=timezone.utc)
+    ))
+
+    assert [row["dedupe_key"] for row in rows] == ["example:greenhouse:101", "example:greenhouse:102"]
