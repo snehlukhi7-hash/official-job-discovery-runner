@@ -31,8 +31,15 @@ jobs:
       - name: Discover and final QA
         run: |
           mkdir -p output
+          set +e
           discovery-runner run-batch --sources sources/greenhouse_sources.json --artifact output/jobs.jsonl.gz --summary-file output/summary.json
-          discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          set -e
+          status="$(python -c 'import json; print(json.load(open("output/summary.json"))["status"])')"
+          if [ "$status" = "READY_FOR_QUALIFICATION" ]; then
+            discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          else
+            test "$status" = "BLOCKED_NO_READY_ARTIFACT"
+          fi
       - name: Upload Greenhouse READY artifact
         uses: actions/upload-artifact@v4
         with:
@@ -44,8 +51,10 @@ jobs:
         shell: bash
         run: |
           mkdir -p control/greenhouse-latest
-          cp output/jobs.jsonl.gz control/greenhouse-latest/jobs.jsonl.gz
           cp output/summary.json control/greenhouse-latest/summary.json
+          if [ -f output/jobs.jsonl.gz ]; then
+            cp output/jobs.jsonl.gz control/greenhouse-latest/jobs.jsonl.gz
+          fi
           python scripts/privacy_scan.py .
           git config user.name official-job-discovery-bot
           git config user.email actions@users.noreply.github.com
@@ -55,4 +64,3 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-
