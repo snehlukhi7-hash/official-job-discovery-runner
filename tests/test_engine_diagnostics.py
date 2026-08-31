@@ -26,4 +26,5 @@ def test_zero_row_run_returns_safe_source_diagnostics_without_artifact(tmp_path)
     assert summary["source_errors"] == [
         {"company": "Diagnostic Example", "error": "UNSUPPORTED_ATS"}
     ]
+    assert summary["source_metrics"] == []
     assert not artifact.exists()
