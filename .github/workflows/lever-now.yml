@@ -31,7 +31,9 @@ jobs:
       - name: Discover and final QA
         run: |
           mkdir -p output
+          set +e
           discovery-runner run-batch --sources sources/lever_sources.json --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          set -e
           if [ -f output/jobs.jsonl.gz ]; then
             discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
           else
