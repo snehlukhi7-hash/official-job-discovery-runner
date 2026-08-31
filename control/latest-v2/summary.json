@@ -1,11 +1,11 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 9,
-  "unique_keys": 9,
+  "artifact_total": 6,
+  "unique_keys": 6,
   "sources_total": 245,
   "source_errors": [
     {
-      "company": "Chevron",
+      "company": "Philips",
       "error": "HTTPError"
     },
     {
@@ -38,6 +38,10 @@
     },
     {
       "company": "Salesforce",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Mastercard",
       "error": "HTTPError"
     },
     {
@@ -233,10 +237,6 @@
       "error": "HTTPError"
     },
     {
-      "company": "Home Depot",
-      "error": "HTTPError"
-    },
-    {
       "company": "Disney",
       "error": "HTTPError"
     },
@@ -245,15 +245,11 @@
       "error": "HTTPError"
     },
     {
-      "company": "Waystar",
+      "company": "Maersk",
       "error": "HTTPError"
     },
     {
-      "company": "Zenith American Solutions",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Castlight Health",
+      "company": "Jefferson",
       "error": "HTTPError"
     },
     {
@@ -280,19 +276,9 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
+      "freshness_rejected": 38,
+      "geography_rejected": 2,
       "malformed_rejected": 0
-    },
-    {
-      "company": "Philips",
-      "listing_count": 40,
-      "detail_checked": 39,
-      "accepted": 0,
-      "identity_rejected": 13,
-      "freshness_rejected": 20,
-      "geography_rejected": 6,
-      "malformed_rejected": 1
     },
     {
       "company": "PayPal",
@@ -308,10 +294,10 @@
       "company": "JLL",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 2,
+      "accepted": 1,
       "identity_rejected": 0,
       "freshness_rejected": 0,
-      "geography_rejected": 38,
+      "geography_rejected": 39,
       "malformed_rejected": 0
     },
     {
@@ -350,8 +336,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 17,
-      "geography_rejected": 23,
+      "freshness_rejected": 15,
+      "geography_rejected": 25,
       "malformed_rejected": 0
     },
     {
@@ -392,6 +378,16 @@
       "identity_rejected": 0,
       "freshness_rejected": 40,
       "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Chevron",
+      "listing_count": 98,
+      "detail_checked": 98,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 87,
+      "geography_rejected": 11,
       "malformed_rejected": 0
     },
     {
@@ -442,16 +438,6 @@
       "identity_rejected": 6,
       "freshness_rejected": 34,
       "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Mastercard",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 1,
-      "geography_rejected": 39,
       "malformed_rejected": 0
     },
     {
@@ -525,6 +511,46 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Home Depot",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Waystar",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Zenith American Solutions",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Castlight Health",
+      "listing_count": 2,
+      "detail_checked": 2,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 2,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Norwegian Cruise Line Holdings",
       "listing_count": 40,
       "detail_checked": 40,
@@ -555,32 +581,12 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Maersk",
-      "listing_count": 1286,
-      "detail_checked": 1286,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 1263,
-      "geography_rejected": 23,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Mass General Brigham",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Jefferson",
-      "listing_count": 1247,
-      "detail_checked": 1247,
-      "accepted": 2,
-      "identity_rejected": 0,
-      "freshness_rejected": 1245,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -620,8 +626,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 8,
-      "freshness_rejected": 31,
-      "geography_rejected": 1,
+      "freshness_rejected": 30,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
