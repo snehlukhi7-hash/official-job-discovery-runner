@@ -1,0 +1,67 @@
+name: Fast official Lever harvest
+
+on:
+  push:
+    branches: [main]
+    paths: [control/lever_canary.txt]
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: lever-now-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install and verify
+        run: |
+          python -m pip install -e '.[test]'
+          python -m pytest -q
+          python scripts/privacy_scan.py .
+      - name: Discover and final QA
+        run: |
+          mkdir -p output
+          discovery-runner run-batch --sources sources/lever_sources.json --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          if [ -f output/jobs.jsonl.gz ]; then
+            discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
+          else
+            echo "BLOCKED_NO_READY_ARTIFACT"
+            cat output/summary.json
+          fi
+      - name: Upload Lever result
+        uses: actions/upload-artifact@v4
+        with:
+          name: lever-result-${{ github.run_id }}
+          path: output/
+          retention-days: 1
+          if-no-files-found: error
+      - name: Persist Lever READY payload
+        shell: bash
+        run: |
+          mkdir -p control/lever-latest
+          cp output/summary.json control/lever-latest/summary.json
+          if [ -f output/jobs.jsonl.gz ]; then
+            cp output/jobs.jsonl.gz control/lever-latest/jobs.jsonl.gz
+          fi
+          python scripts/privacy_scan.py .
+          git config user.name official-job-discovery-bot
+          git config user.email actions@users.noreply.github.com
+          git add control/lever-latest/summary.json
+          if [ -f control/lever-latest/jobs.jsonl.gz ]; then
+            git add control/lever-latest/jobs.jsonl.gz
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update latest sanitized Lever payload"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
