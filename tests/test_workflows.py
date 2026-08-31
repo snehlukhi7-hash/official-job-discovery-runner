@@ -9,6 +9,7 @@ def test_harvest_workflow_dedupes_before_expensive_setup():
     dedupe = text.index("id: dedupe")
     assert dedupe < text.index("actions/setup-python@")
     assert dedupe < text.index("pip install")
+    assert "item.workflow_run?.head_sha === context.sha" in text
 
 
 def test_harvest_uses_et_timezone_and_one_day_retention():
