@@ -1,7 +1,7 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 329,
-  "unique_keys": 329,
+  "artifact_total": 263,
+  "unique_keys": 263,
   "sources_total": 245,
   "source_errors": [
     {
@@ -37,10 +37,6 @@
       "error": "HTTPError"
     },
     {
-      "company": "Mastercard",
-      "error": "HTTPError"
-    },
-    {
       "company": "AMD",
       "error": "HTTPError"
     },
@@ -70,6 +66,10 @@
     },
     {
       "company": "Intuit",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Autodesk",
       "error": "HTTPError"
     },
     {
@@ -189,15 +189,35 @@
       "error": "HTTPError"
     },
     {
+      "company": "DataRobot",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Equifax",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Flex",
+      "error": "HTTPError"
+    },
+    {
       "company": "GE Aerospace",
       "error": "HTTPError"
     },
     {
-      "company": "IFF",
+      "company": "KBR",
       "error": "HTTPError"
     },
     {
-      "company": "KBR",
+      "company": "PPG",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Campbell's",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Home Depot",
       "error": "HTTPError"
     },
     {
@@ -210,10 +230,6 @@
     },
     {
       "company": "Verizon",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Maersk",
       "error": "HTTPError"
     },
     {
@@ -272,20 +288,20 @@
       "company": "JLL",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 27,
+      "accepted": 33,
       "identity_rejected": 0,
       "freshness_rejected": 1,
-      "geography_rejected": 12,
+      "geography_rejected": 6,
       "malformed_rejected": 0
     },
     {
       "company": "ALS Global",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 2,
+      "accepted": 4,
       "identity_rejected": 0,
-      "freshness_rejected": 27,
-      "geography_rejected": 11,
+      "freshness_rejected": 23,
+      "geography_rejected": 13,
       "malformed_rejected": 0
     },
     {
@@ -302,8 +318,8 @@
       "company": "Morgan Stanley",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 5,
-      "identity_rejected": 8,
+      "accepted": 4,
+      "identity_rejected": 9,
       "freshness_rejected": 27,
       "geography_rejected": 0,
       "malformed_rejected": 0
@@ -352,10 +368,10 @@
       "company": "CarMax",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 0,
+      "accepted": 1,
       "identity_rejected": 0,
-      "freshness_rejected": 13,
-      "geography_rejected": 27,
+      "freshness_rejected": 9,
+      "geography_rejected": 30,
       "malformed_rejected": 0
     },
     {
@@ -392,9 +408,9 @@
       "company": "Greystar",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 39,
+      "accepted": 40,
       "identity_rejected": 0,
-      "freshness_rejected": 1,
+      "freshness_rejected": 0,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -402,9 +418,9 @@
       "company": "T. Rowe Price",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 5,
+      "accepted": 7,
       "identity_rejected": 6,
-      "freshness_rejected": 29,
+      "freshness_rejected": 27,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -419,22 +435,22 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Mastercard",
+      "listing_count": 40,
+      "detail_checked": 39,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 0,
+      "geography_rejected": 39,
+      "malformed_rejected": 1
+    },
+    {
       "company": "Dell",
       "listing_count": 0,
       "detail_checked": 0,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 0,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Autodesk",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 32,
-      "freshness_rejected": 8,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -460,11 +476,11 @@
     },
     {
       "company": "Clio",
-      "listing_count": 157,
-      "detail_checked": 157,
+      "listing_count": 155,
+      "detail_checked": 155,
       "accepted": 0,
       "identity_rejected": 26,
-      "freshness_rejected": 125,
+      "freshness_rejected": 123,
       "geography_rejected": 6,
       "malformed_rejected": 0
     },
@@ -479,16 +495,6 @@
       "malformed_rejected": 0
     },
     {
-      "company": "DataRobot",
-      "listing_count": 16,
-      "detail_checked": 16,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 15,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Dematic",
       "listing_count": 40,
       "detail_checked": 40,
@@ -499,23 +505,13 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Equifax",
+      "company": "IFF",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 1,
+      "accepted": 3,
       "identity_rejected": 0,
-      "freshness_rejected": 36,
-      "geography_rejected": 3,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Flex",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 25,
-      "identity_rejected": 0,
-      "freshness_rejected": 0,
-      "geography_rejected": 15,
+      "freshness_rejected": 27,
+      "geography_rejected": 10,
       "malformed_rejected": 0
     },
     {
@@ -529,54 +525,24 @@
       "malformed_rejected": 0
     },
     {
-      "company": "PPG",
+      "company": "RBC",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 27,
-      "geography_rejected": 11,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "RBC",
-      "listing_count": 40,
-      "detail_checked": 39,
-      "accepted": 1,
-      "identity_rejected": 0,
       "freshness_rejected": 25,
       "geography_rejected": 13,
-      "malformed_rejected": 1
+      "malformed_rejected": 0
     },
     {
       "company": "Revvity",
       "listing_count": 40,
-      "detail_checked": 40,
+      "detail_checked": 39,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 40,
+      "freshness_rejected": 39,
       "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Campbell's",
-      "listing_count": 318,
-      "detail_checked": 318,
-      "accepted": 58,
-      "identity_rejected": 0,
-      "freshness_rejected": 260,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Home Depot",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 13,
-      "geography_rejected": 27,
-      "malformed_rejected": 0
+      "malformed_rejected": 1
     },
     {
       "company": "Waystar",
@@ -627,6 +593,16 @@
       "freshness_rejected": 0,
       "geography_rejected": 0,
       "malformed_rejected": 0
+    },
+    {
+      "company": "Maersk",
+      "listing_count": 1282,
+      "detail_checked": 1276,
+      "accepted": 4,
+      "identity_rejected": 0,
+      "freshness_rejected": 1240,
+      "geography_rejected": 32,
+      "malformed_rejected": 6
     },
     {
       "company": "Mass General Brigham",
@@ -712,9 +688,9 @@
       "company": "Abbott",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 15,
+      "accepted": 16,
       "identity_rejected": 10,
-      "freshness_rejected": 15,
+      "freshness_rejected": 14,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1320,11 +1296,11 @@
     },
     {
       "company": "Hinge Health",
-      "listing_count": 70,
-      "detail_checked": 70,
+      "listing_count": 69,
+      "detail_checked": 69,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 70,
+      "freshness_rejected": 69,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1500,12 +1476,12 @@
     },
     {
       "company": "Mercor",
-      "listing_count": 93,
-      "detail_checked": 93,
+      "listing_count": 94,
+      "detail_checked": 94,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 91,
-      "geography_rejected": 2,
+      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
@@ -1560,12 +1536,12 @@
     },
     {
       "company": "Notion",
-      "listing_count": 131,
-      "detail_checked": 131,
+      "listing_count": 132,
+      "detail_checked": 132,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 131,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1640,12 +1616,12 @@
     },
     {
       "company": "OpenAI",
-      "listing_count": 753,
-      "detail_checked": 753,
+      "listing_count": 755,
+      "detail_checked": 755,
       "accepted": 1,
       "identity_rejected": 0,
       "freshness_rejected": 747,
-      "geography_rejected": 5,
+      "geography_rejected": 7,
       "malformed_rejected": 0
     },
     {
@@ -2000,11 +1976,11 @@
     },
     {
       "company": "Topline Pro",
-      "listing_count": 13,
-      "detail_checked": 13,
+      "listing_count": 12,
+      "detail_checked": 12,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 13,
+      "freshness_rejected": 12,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
