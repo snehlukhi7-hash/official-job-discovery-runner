@@ -1,1 +1,1 @@
-Discovery-only canary trigger. Workday requisition recovery run 4.
+Discovery-only canary trigger. Expanded official source run 5.
