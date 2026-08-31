@@ -11,6 +11,7 @@ def test_greenhouse_now_workflow_is_public_fail_closed_and_persistent():
     assert "discovery-runner final-qa" in text
     assert text.index("discovery-runner final-qa") < text.index("Persist Greenhouse READY payload")
     assert "control/greenhouse-latest/jobs.jsonl.gz" in text
+    assert "BLOCKED_NO_READY_ARTIFACT" in text
     forbidden = ("ts" + "enta", "gm" + "ail", "res" + "ume", "sub" + "mit")
     assert [term for term in forbidden if term in text.lower()] == []
 
