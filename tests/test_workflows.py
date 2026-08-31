@@ -6,6 +6,7 @@ ROOT = Path(__file__).parents[1]
 
 def test_harvest_workflow_dedupes_before_expensive_setup():
     text = (ROOT / ".github/workflows/harvest.yml").read_text(encoding="utf-8")
+    assert "group: public-harvest-${{ github.sha }}" in text
     dedupe = text.index("id: dedupe")
     assert dedupe < text.index("actions/setup-python@")
     assert dedupe < text.index("pip install")
