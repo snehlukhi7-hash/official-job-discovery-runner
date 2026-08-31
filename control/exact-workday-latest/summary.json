@@ -1,0 +1,19 @@
+{
+  "status": "READY_FOR_QUALIFICATION",
+  "artifact_total": 1,
+  "unique_keys": 1,
+  "sources_total": 1,
+  "source_errors": [],
+  "source_metrics": [
+    {
+      "company": "Raymond James",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    }
+  ]
+}
