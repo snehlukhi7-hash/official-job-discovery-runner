@@ -20,12 +20,15 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
     fetched_at = datetime.now(timezone.utc)
     rows = []
     errors = []
+    source_metrics = []
     for source in sources:
         if source.ats.casefold() != "workday":
             errors.append({"company": source.company, "error": "UNSUPPORTED_ATS"})
             continue
         try:
-            rows.extend(await WorkdayAdapter(transport).discover(source, fetched_at))
+            adapter = WorkdayAdapter(transport)
+            rows.extend(await adapter.discover(source, fetched_at))
+            source_metrics.append({"company": source.company, **adapter.metrics})
         except Exception as exc:
             errors.append({"company": source.company, "error": type(exc).__name__})
     if not rows:
@@ -35,6 +38,7 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
             "unique_keys": 0,
             "sources_total": len(sources),
             "source_errors": errors,
+            "source_metrics": source_metrics,
         }
     summary = write_public_artifact(rows, artifact_path)
     return {
@@ -43,6 +47,7 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
         "unique_keys": summary.unique_keys,
         "sources_total": len(sources),
         "source_errors": errors,
+        "source_metrics": source_metrics,
     }
 
 
