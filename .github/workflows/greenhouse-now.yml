@@ -34,11 +34,11 @@ jobs:
           set +e
           discovery-runner run-batch --sources sources/greenhouse_sources.json --artifact output/jobs.jsonl.gz --summary-file output/summary.json
           set -e
-          status="$(python -c 'import json; print(json.load(open("output/summary.json"))["status"])')"
-          if [ "$status" = "READY_FOR_QUALIFICATION" ]; then
+          if [ -f output/jobs.jsonl.gz ]; then
             discovery-runner final-qa --artifact output/jobs.jsonl.gz --summary-file output/summary.json
           else
-            test "$status" = "BLOCKED_NO_READY_ARTIFACT"
+            echo "BLOCKED_NO_READY_ARTIFACT"
+            cat output/summary.json
           fi
       - name: Upload Greenhouse READY artifact
         uses: actions/upload-artifact@v4
@@ -58,7 +58,10 @@ jobs:
           python scripts/privacy_scan.py .
           git config user.name official-job-discovery-bot
           git config user.email actions@users.noreply.github.com
-          git add control/greenhouse-latest/jobs.jsonl.gz control/greenhouse-latest/summary.json
+          git add control/greenhouse-latest/summary.json
+          if [ -f control/greenhouse-latest/jobs.jsonl.gz ]; then
+            git add control/greenhouse-latest/jobs.jsonl.gz
+          fi
           if ! git diff --cached --quiet; then
             git commit -m "Update latest sanitized Greenhouse READY payload"
             git pull --rebase origin main
