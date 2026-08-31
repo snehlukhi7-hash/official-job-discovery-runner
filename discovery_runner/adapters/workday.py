@@ -13,6 +13,7 @@ from ..models import Source
 class WorkdayAdapter:
     def __init__(self, transport):
         self.transport = transport
+        self.metrics = {}
 
     @staticmethod
     def _parts(source: Source) -> tuple[str, str, str, str]:
@@ -34,20 +35,33 @@ class WorkdayAdapter:
             listing_url,
             {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""},
         )
+        items = listing.get("jobPostings", [])
+        self.metrics = {
+            "listing_count": len(items),
+            "detail_checked": 0,
+            "accepted": 0,
+            "identity_rejected": 0,
+            "freshness_rejected": 0,
+            "geography_rejected": 0,
+            "malformed_rejected": 0,
+        }
         rows: list[dict] = []
-        for item in listing.get("jobPostings", []):
+        for item in items:
             external_path = str(item.get("externalPath") or "").strip()
             req_id = str(item.get("jobReqId") or item.get("id") or "").strip()
             if not external_path or not req_id or "/job/" not in external_path:
+                self.metrics["malformed_rejected"] += 1
                 continue
             tail = external_path.split("/job/", 1)[1].strip("/")
             evidence_url = f"https://{host}/wday/cxs/{tenant}/{site}/job/{tail}"
             detail_payload = await self.transport.json("GET", evidence_url)
+            self.metrics["detail_checked"] += 1
             detail = detail_payload.get("jobPostingInfo") or detail_payload
             detail_req = str(
                 detail.get("jobReqId") or detail.get("jobRequisitionId") or ""
             ).strip()
             if detail_req and detail_req.casefold() != req_id.casefold():
+                self.metrics["identity_rejected"] += 1
                 continue
             posted_on = str(detail.get("postedOn") or "").strip()
             start_date = str(detail.get("startDate") or "").strip()
@@ -56,7 +70,11 @@ class WorkdayAdapter:
             description = str(
                 detail.get("jobDescription") or detail.get("description") or ""
             ).strip()
-            if freshness.status != "VERIFIED" or not is_verified_us_location(location):
+            if freshness.status != "VERIFIED":
+                self.metrics["freshness_rejected"] += 1
+                continue
+            if not is_verified_us_location(location):
+                self.metrics["geography_rejected"] += 1
                 continue
             official_path = external_path if external_path.startswith("/") else "/" + external_path
             rows.append(
@@ -81,5 +99,5 @@ class WorkdayAdapter:
                     "dedupe_key": f"{source.company.casefold()}:{req_id.casefold()}",
                 }
             )
+            self.metrics["accepted"] += 1
         return rows
-
