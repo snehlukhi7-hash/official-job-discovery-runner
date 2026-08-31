@@ -29,7 +29,8 @@ def main(argv=None) -> int:
     if args.command == "run-batch":
         summary = discover_sync(args.sources, args.artifact)
         Path(args.summary_file).write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
-        return 0
+        print(json.dumps(summary, indent=2))
+        return 0 if summary.get("status") == "READY_FOR_QUALIFICATION" else 1
     result = run_final_qa(args.artifact, args.summary_file)
     print(json.dumps(asdict(result), indent=2))
     return 0 if result.pass_ else 1
@@ -37,4 +38,3 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
