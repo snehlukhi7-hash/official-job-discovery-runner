@@ -19,24 +19,28 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
     sources = [Source(**item) for item in definitions]
     transport = JsonTransport()
     fetched_at = datetime.now(timezone.utc)
-    rows = []
-    errors = []
-    source_metrics = []
-    for source in sources:
+    semaphore = asyncio.Semaphore(8)
+
+    async def discover_source(source: Source):
         adapter_type = source.ats.casefold()
         if adapter_type not in {"workday", "ashby"}:
-            errors.append({"company": source.company, "error": "UNSUPPORTED_ATS"})
-            continue
+            return [], {"company": source.company, "error": "UNSUPPORTED_ATS"}, None
         try:
             adapter = (
                 WorkdayAdapter(transport)
                 if adapter_type == "workday"
                 else AshbyAdapter(transport)
             )
-            rows.extend(await adapter.discover(source, fetched_at))
-            source_metrics.append({"company": source.company, **adapter.metrics})
+            async with semaphore:
+                source_rows = await adapter.discover(source, fetched_at)
+            return source_rows, None, {"company": source.company, **adapter.metrics}
         except Exception as exc:
-            errors.append({"company": source.company, "error": type(exc).__name__})
+            return [], {"company": source.company, "error": type(exc).__name__}, None
+
+    results = await asyncio.gather(*(discover_source(source) for source in sources))
+    rows = [row for source_rows, _, _ in results for row in source_rows]
+    errors = [error for _, error, _ in results if error is not None]
+    source_metrics = [metrics for _, _, metrics in results if metrics is not None]
     if not rows:
         return {
             "status": "BLOCKED_NO_READY_ARTIFACT",
