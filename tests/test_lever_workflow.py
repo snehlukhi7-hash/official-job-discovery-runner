@@ -12,6 +12,7 @@ def test_lever_now_workflow_is_public_fail_closed_and_persistent():
     assert text.index("discovery-runner final-qa") < text.index("Persist Lever READY payload")
     assert "control/lever-latest/jobs.jsonl.gz" in text
     assert "BLOCKED_NO_READY_ARTIFACT" in text
+    assert text.index("set +e") < text.index("discovery-runner run-batch") < text.index("set -e")
 
 
 def test_lever_sources_are_official_and_nontrivial():
