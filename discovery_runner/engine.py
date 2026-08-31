@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .adapters.workday import WorkdayAdapter
 from .adapters.ashby import AshbyAdapter
+from .adapters.greenhouse import GreenhouseAdapter
 from .models import Source
 from .public_artifacts import write_public_artifact
 from .transport import JsonTransport
@@ -23,14 +24,15 @@ async def discover(sources_path: str | Path, artifact_path: str | Path) -> dict:
 
     async def discover_source(source: Source):
         adapter_type = source.ats.casefold()
-        if adapter_type not in {"workday", "ashby"}:
+        if adapter_type not in {"workday", "ashby", "greenhouse"}:
             return [], {"company": source.company, "error": "UNSUPPORTED_ATS"}, None
         try:
-            adapter = (
-                WorkdayAdapter(transport)
-                if adapter_type == "workday"
-                else AshbyAdapter(transport)
-            )
+            adapters = {
+                "workday": WorkdayAdapter,
+                "ashby": AshbyAdapter,
+                "greenhouse": GreenhouseAdapter,
+            }
+            adapter = adapters[adapter_type](transport)
             async with semaphore:
                 source_rows = await adapter.discover(source, fetched_at)
             return source_rows, None, {"company": source.company, **adapter.metrics}
