@@ -62,6 +62,15 @@ def test_workday_adapter_uses_exact_detail_and_keeps_only_verified_us():
     assert rows[0]["evidence_url"] == f"{base}/New-York/REQ-1"
     assert transport.calls[0][0] == "POST"
     assert [call[0] for call in transport.calls[1:]] == ["GET", "GET"]
+    assert adapter.metrics == {
+        "listing_count": 2,
+        "detail_checked": 2,
+        "accepted": 1,
+        "identity_rejected": 0,
+        "freshness_rejected": 0,
+        "geography_rejected": 1,
+        "malformed_rejected": 0,
+    }
 
 
 def test_workday_adapter_rejects_list_detail_identity_mismatch():
@@ -72,4 +81,3 @@ def test_workday_adapter_rejects_list_detail_identity_mismatch():
 
     rows = asyncio.run(WorkdayAdapter(FakeTransport(listing, details)).discover(source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc)))
     assert rows == []
-
