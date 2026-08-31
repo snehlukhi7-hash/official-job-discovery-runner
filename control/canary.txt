@@ -1,0 +1,1 @@
+Discovery-only canary trigger. Update this file to request a new public canary.
