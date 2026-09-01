@@ -1,7 +1,7 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 52,
-  "unique_keys": 52,
+  "artifact_total": 54,
+  "unique_keys": 54,
   "sources_total": 245,
   "source_errors": [
     {
@@ -18,6 +18,10 @@
     },
     {
       "company": "Netflix",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Adobe",
       "error": "HTTPError"
     },
     {
@@ -45,6 +49,10 @@
       "error": "HTTPError"
     },
     {
+      "company": "HP",
+      "error": "HTTPError"
+    },
+    {
       "company": "Lenovo",
       "error": "HTTPError"
     },
@@ -58,6 +66,10 @@
     },
     {
       "company": "Intuit",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Autodesk",
       "error": "HTTPError"
     },
     {
@@ -229,23 +241,19 @@
       "error": "HTTPError"
     },
     {
+      "company": "Waystar",
+      "error": "HTTPError"
+    },
+    {
       "company": "Zenith American Solutions",
       "error": "HTTPError"
     },
     {
-      "company": "Sentara Healthcare",
+      "company": "Castlight Health",
       "error": "HTTPError"
     },
     {
-      "company": "Marsh & McLennan Companies",
-      "error": "HTTPError"
-    },
-    {
-      "company": "HCSC",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Dexcom",
+      "company": "Maersk",
       "error": "HTTPError"
     },
     {
@@ -282,8 +290,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 14,
-      "freshness_rejected": 16,
-      "geography_rejected": 10,
+      "freshness_rejected": 15,
+      "geography_rejected": 11,
       "malformed_rejected": 0
     },
     {
@@ -342,8 +350,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 13,
-      "geography_rejected": 27,
+      "freshness_rejected": 11,
+      "geography_rejected": 29,
       "malformed_rejected": 0
     },
     {
@@ -420,9 +428,9 @@
       "company": "Greystar",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 3,
+      "accepted": 4,
       "identity_rejected": 0,
-      "freshness_rejected": 37,
+      "freshness_rejected": 36,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -442,18 +450,8 @@
       "detail_checked": 40,
       "accepted": 3,
       "identity_rejected": 0,
-      "freshness_rejected": 20,
-      "geography_rejected": 17,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Adobe",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
+      "freshness_rejected": 19,
+      "geography_rejected": 18,
       "malformed_rejected": 0
     },
     {
@@ -474,26 +472,6 @@
       "identity_rejected": 0,
       "freshness_rejected": 0,
       "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "HP",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 32,
-      "freshness_rejected": 7,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Autodesk",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 30,
-      "freshness_rejected": 9,
-      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -542,8 +520,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 37,
-      "geography_rejected": 3,
+      "freshness_rejected": 36,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     },
     {
@@ -554,26 +532,6 @@
       "identity_rejected": 0,
       "freshness_rejected": 32,
       "geography_rejected": 8,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Waystar",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Castlight Health",
-      "listing_count": 2,
-      "detail_checked": 2,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 2,
-      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -607,16 +565,6 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Maersk",
-      "listing_count": 1273,
-      "detail_checked": 1271,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 1234,
-      "geography_rejected": 37,
-      "malformed_rejected": 2
-    },
-    {
       "company": "Mass General Brigham",
       "listing_count": 40,
       "detail_checked": 40,
@@ -630,10 +578,40 @@
       "company": "Jefferson",
       "listing_count": 1242,
       "detail_checked": 1242,
-      "accepted": 2,
+      "accepted": 3,
       "identity_rejected": 0,
-      "freshness_rejected": 1239,
+      "freshness_rejected": 1238,
       "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Sentara Healthcare",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Marsh & McLennan Companies",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 34,
+      "geography_rejected": 6,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "HCSC",
+      "listing_count": 114,
+      "detail_checked": 114,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 114,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -654,6 +632,16 @@
       "identity_rejected": 1,
       "freshness_rejected": 36,
       "geography_rejected": 3,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Dexcom",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 28,
+      "geography_rejected": 12,
       "malformed_rejected": 0
     },
     {
@@ -1408,12 +1396,12 @@
     },
     {
       "company": "Legora",
-      "listing_count": 281,
-      "detail_checked": 281,
+      "listing_count": 282,
+      "detail_checked": 282,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 276,
-      "geography_rejected": 5,
+      "geography_rejected": 6,
       "malformed_rejected": 0
     },
     {
