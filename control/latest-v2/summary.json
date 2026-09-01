@@ -1,11 +1,15 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 399,
-  "unique_keys": 399,
+  "artifact_total": 51,
+  "unique_keys": 51,
   "sources_total": 245,
   "source_errors": [
     {
       "company": "Chevron",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Leidos",
       "error": "HTTPError"
     },
     {
@@ -18,6 +22,10 @@
     },
     {
       "company": "Netflix",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Adobe",
       "error": "HTTPError"
     },
     {
@@ -45,6 +53,10 @@
       "error": "HTTPError"
     },
     {
+      "company": "HP",
+      "error": "HTTPError"
+    },
+    {
       "company": "Lenovo",
       "error": "HTTPError"
     },
@@ -53,7 +65,15 @@
       "error": "HTTPError"
     },
     {
+      "company": "Workday",
+      "error": "HTTPError"
+    },
+    {
       "company": "Intuit",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Autodesk",
       "error": "HTTPError"
     },
     {
@@ -70,6 +90,10 @@
     },
     {
       "company": "Capital One",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Booz Allen Hamilton",
       "error": "HTTPError"
     },
     {
@@ -193,10 +217,6 @@
       "error": "HTTPError"
     },
     {
-      "company": "KBR",
-      "error": "HTTPError"
-    },
-    {
       "company": "PPG",
       "error": "HTTPError"
     },
@@ -214,10 +234,6 @@
     },
     {
       "company": "TransUnion",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Zenith American Solutions",
       "error": "HTTPError"
     },
     {
@@ -244,17 +260,17 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 26,
-      "geography_rejected": 14,
+      "freshness_rejected": 34,
+      "geography_rejected": 6,
       "malformed_rejected": 0
     },
     {
       "company": "Philips",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 15,
-      "identity_rejected": 15,
-      "freshness_rejected": 0,
+      "accepted": 0,
+      "identity_rejected": 14,
+      "freshness_rejected": 16,
       "geography_rejected": 10,
       "malformed_rejected": 0
     },
@@ -271,30 +287,30 @@
     {
       "company": "JLL",
       "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 35,
+      "detail_checked": 39,
+      "accepted": 1,
       "identity_rejected": 0,
-      "freshness_rejected": 1,
-      "geography_rejected": 4,
-      "malformed_rejected": 0
+      "freshness_rejected": 0,
+      "geography_rejected": 38,
+      "malformed_rejected": 1
     },
     {
       "company": "ALS Global",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 5,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 19,
-      "geography_rejected": 16,
+      "freshness_rejected": 35,
+      "geography_rejected": 5,
       "malformed_rejected": 0
     },
     {
       "company": "Brookfield",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 3,
+      "accepted": 0,
       "identity_rejected": 12,
-      "freshness_rejected": 25,
+      "freshness_rejected": 28,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -302,10 +318,10 @@
       "company": "Morgan Stanley",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 6,
-      "identity_rejected": 7,
+      "accepted": 0,
+      "identity_rejected": 8,
       "freshness_rejected": 27,
-      "geography_rejected": 0,
+      "geography_rejected": 5,
       "malformed_rejected": 0
     },
     {
@@ -314,112 +330,12 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 6,
-      "geography_rejected": 34,
+      "freshness_rejected": 14,
+      "geography_rejected": 26,
       "malformed_rejected": 0
     },
     {
       "company": "GEICO",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 7,
-      "identity_rejected": 0,
-      "freshness_rejected": 33,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Wellington Management",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 2,
-      "identity_rejected": 0,
-      "freshness_rejected": 38,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Withum",
-      "listing_count": 92,
-      "detail_checked": 92,
-      "accepted": 5,
-      "identity_rejected": 2,
-      "freshness_rejected": 85,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "CarMax",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 1,
-      "identity_rejected": 0,
-      "freshness_rejected": 3,
-      "geography_rejected": 36,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Raymond James",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 11,
-      "identity_rejected": 0,
-      "freshness_rejected": 27,
-      "geography_rejected": 2,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Leidos",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 8,
-      "identity_rejected": 0,
-      "freshness_rejected": 32,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Transamerica",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 2,
-      "identity_rejected": 0,
-      "freshness_rejected": 35,
-      "geography_rejected": 3,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Greystar",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 39,
-      "identity_rejected": 0,
-      "freshness_rejected": 0,
-      "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "T. Rowe Price",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 8,
-      "identity_rejected": 6,
-      "freshness_rejected": 26,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "NVIDIA",
-      "listing_count": 40,
-      "detail_checked": 39,
-      "accepted": 27,
-      "identity_rejected": 0,
-      "freshness_rejected": 7,
-      "geography_rejected": 5,
-      "malformed_rejected": 1
-    },
-    {
-      "company": "Adobe",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
@@ -429,13 +345,93 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Wellington Management",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Withum",
+      "listing_count": 92,
+      "detail_checked": 92,
+      "accepted": 0,
+      "identity_rejected": 2,
+      "freshness_rejected": 90,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "CarMax",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Raymond James",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 1,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Transamerica",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Greystar",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 3,
+      "identity_rejected": 0,
+      "freshness_rejected": 37,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "T. Rowe Price",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 6,
+      "freshness_rejected": 34,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "NVIDIA",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 3,
+      "identity_rejected": 0,
+      "freshness_rejected": 20,
+      "geography_rejected": 17,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Mastercard",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 0,
-      "geography_rejected": 40,
+      "freshness_rejected": 13,
+      "geography_rejected": 27,
       "malformed_rejected": 0
     },
     {
@@ -446,46 +442,6 @@
       "identity_rejected": 0,
       "freshness_rejected": 0,
       "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "HP",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 1,
-      "identity_rejected": 30,
-      "freshness_rejected": 9,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Workday",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 14,
-      "identity_rejected": 0,
-      "freshness_rejected": 17,
-      "geography_rejected": 9,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Autodesk",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 1,
-      "identity_rejected": 31,
-      "freshness_rejected": 8,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Booz Allen Hamilton",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 34,
-      "identity_rejected": 0,
-      "freshness_rejected": 3,
-      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
@@ -500,42 +456,52 @@
     },
     {
       "company": "Clio",
-      "listing_count": 153,
-      "detail_checked": 153,
+      "listing_count": 154,
+      "detail_checked": 154,
       "accepted": 0,
       "identity_rejected": 27,
-      "freshness_rejected": 120,
-      "geography_rejected": 6,
+      "freshness_rejected": 127,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Copart",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 19,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 18,
-      "geography_rejected": 3,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Dematic",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 8,
+      "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 27,
-      "geography_rejected": 5,
+      "freshness_rejected": 35,
+      "geography_rejected": 3,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "KBR",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 32,
+      "geography_rejected": 8,
       "malformed_rejected": 0
     },
     {
       "company": "KION Group",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 8,
+      "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 18,
-      "geography_rejected": 14,
+      "freshness_rejected": 32,
+      "geography_rejected": 6,
       "malformed_rejected": 0
     },
     {
@@ -544,8 +510,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 24,
-      "geography_rejected": 16,
+      "freshness_rejected": 38,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
@@ -554,17 +520,27 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 39,
-      "geography_rejected": 1,
+      "freshness_rejected": 32,
+      "geography_rejected": 8,
       "malformed_rejected": 0
     },
     {
       "company": "Waystar",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 3,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 37,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Zenith American Solutions",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -584,18 +560,18 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 37,
-      "geography_rejected": 3,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Verizon",
-      "listing_count": 423,
-      "detail_checked": 423,
+      "listing_count": 402,
+      "detail_checked": 402,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 373,
-      "geography_rejected": 50,
+      "freshness_rejected": 399,
+      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
@@ -610,13 +586,13 @@
     },
     {
       "company": "Maersk",
-      "listing_count": 1275,
-      "detail_checked": 1274,
-      "accepted": 10,
+      "listing_count": 1272,
+      "detail_checked": 1270,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 1230,
-      "geography_rejected": 34,
-      "malformed_rejected": 1
+      "freshness_rejected": 1234,
+      "geography_rejected": 36,
+      "malformed_rejected": 2
     },
     {
       "company": "Mass General Brigham",
@@ -624,28 +600,28 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 37,
-      "geography_rejected": 3,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Jefferson",
-      "listing_count": 1245,
-      "detail_checked": 1245,
-      "accepted": 36,
+      "listing_count": 1242,
+      "detail_checked": 1242,
+      "accepted": 1,
       "identity_rejected": 0,
-      "freshness_rejected": 1207,
-      "geography_rejected": 2,
+      "freshness_rejected": 1240,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
       "company": "Sentara Healthcare",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 3,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 36,
-      "geography_rejected": 1,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -654,18 +630,18 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 19,
-      "geography_rejected": 21,
+      "freshness_rejected": 35,
+      "geography_rejected": 5,
       "malformed_rejected": 0
     },
     {
       "company": "HCSC",
-      "listing_count": 115,
-      "detail_checked": 115,
+      "listing_count": 114,
+      "detail_checked": 114,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 103,
-      "geography_rejected": 12,
+      "freshness_rejected": 114,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -673,19 +649,19 @@
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
-      "identity_rejected": 10,
-      "freshness_rejected": 21,
-      "geography_rejected": 9,
+      "identity_rejected": 8,
+      "freshness_rejected": 31,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
       "company": "Trane Technologies",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 2,
+      "accepted": 0,
       "identity_rejected": 1,
-      "freshness_rejected": 0,
-      "geography_rejected": 37,
+      "freshness_rejected": 37,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
@@ -694,17 +670,17 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 33,
-      "geography_rejected": 7,
+      "freshness_rejected": 32,
+      "geography_rejected": 8,
       "malformed_rejected": 0
     },
     {
       "company": "M&T Bank",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 24,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 16,
+      "freshness_rejected": 40,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -712,9 +688,9 @@
       "company": "Abbott",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 24,
+      "accepted": 0,
       "identity_rejected": 16,
-      "freshness_rejected": 0,
+      "freshness_rejected": 24,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -722,9 +698,9 @@
       "company": "Southeastern Freight Lines",
       "listing_count": 40,
       "detail_checked": 40,
-      "accepted": 10,
+      "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 30,
+      "freshness_rejected": 40,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -734,8 +710,8 @@
       "detail_checked": 34,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 33,
-      "geography_rejected": 1,
+      "freshness_rejected": 34,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -750,11 +726,11 @@
     },
     {
       "company": "Abridge",
-      "listing_count": 41,
-      "detail_checked": 41,
+      "listing_count": 40,
+      "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 41,
+      "freshness_rejected": 40,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -784,18 +760,18 @@
       "detail_checked": 33,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 27,
-      "geography_rejected": 6,
+      "freshness_rejected": 31,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
       "company": "AKASA",
-      "listing_count": 13,
-      "detail_checked": 13,
+      "listing_count": 14,
+      "detail_checked": 14,
       "accepted": 1,
       "identity_rejected": 0,
       "freshness_rejected": 12,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -810,11 +786,11 @@
     },
     {
       "company": "Amplify",
-      "listing_count": 41,
-      "detail_checked": 41,
+      "listing_count": 40,
+      "detail_checked": 40,
       "accepted": 6,
       "identity_rejected": 0,
-      "freshness_rejected": 35,
+      "freshness_rejected": 34,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -950,11 +926,11 @@
     },
     {
       "company": "Benchling",
-      "listing_count": 55,
-      "detail_checked": 55,
+      "listing_count": 52,
+      "detail_checked": 52,
       "accepted": 1,
       "identity_rejected": 0,
-      "freshness_rejected": 54,
+      "freshness_rejected": 51,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1010,11 +986,11 @@
     },
     {
       "company": "Canals",
-      "listing_count": 28,
-      "detail_checked": 28,
+      "listing_count": 27,
+      "detail_checked": 27,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 28,
+      "freshness_rejected": 27,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1060,12 +1036,12 @@
     },
     {
       "company": "Clay Labs",
-      "listing_count": 64,
-      "detail_checked": 64,
+      "listing_count": 63,
+      "detail_checked": 63,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 61,
-      "geography_rejected": 3,
+      "freshness_rejected": 59,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     },
     {
@@ -1090,11 +1066,11 @@
     },
     {
       "company": "Commure",
-      "listing_count": 72,
-      "detail_checked": 72,
-      "accepted": 0,
+      "listing_count": 74,
+      "detail_checked": 74,
+      "accepted": 3,
       "identity_rejected": 0,
-      "freshness_rejected": 72,
+      "freshness_rejected": 71,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1160,11 +1136,11 @@
     },
     {
       "company": "Decagon",
-      "listing_count": 137,
-      "detail_checked": 137,
+      "listing_count": 138,
+      "detail_checked": 138,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 137,
+      "freshness_rejected": 138,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1194,8 +1170,8 @@
       "detail_checked": 109,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 109,
-      "geography_rejected": 0,
+      "freshness_rejected": 108,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1210,12 +1186,12 @@
     },
     {
       "company": "Etched",
-      "listing_count": 108,
-      "detail_checked": 108,
+      "listing_count": 109,
+      "detail_checked": 109,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 108,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1280,12 +1256,12 @@
     },
     {
       "company": "Happyrobot Inc.",
-      "listing_count": 74,
-      "detail_checked": 74,
+      "listing_count": 75,
+      "detail_checked": 75,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 74,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1300,31 +1276,31 @@
     },
     {
       "company": "Harvey",
-      "listing_count": 347,
-      "detail_checked": 347,
+      "listing_count": 349,
+      "detail_checked": 349,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 347,
+      "freshness_rejected": 349,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Headway",
-      "listing_count": 85,
-      "detail_checked": 85,
+      "listing_count": 82,
+      "detail_checked": 82,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 82,
+      "freshness_rejected": 79,
       "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
       "company": "Hinge Health",
-      "listing_count": 69,
-      "detail_checked": 69,
+      "listing_count": 68,
+      "detail_checked": 68,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 69,
+      "freshness_rejected": 68,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1410,12 +1386,12 @@
     },
     {
       "company": "Kraken",
-      "listing_count": 93,
-      "detail_checked": 93,
+      "listing_count": 92,
+      "detail_checked": 92,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 91,
-      "geography_rejected": 2,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1450,12 +1426,12 @@
     },
     {
       "company": "Legora",
-      "listing_count": 283,
-      "detail_checked": 283,
+      "listing_count": 281,
+      "detail_checked": 281,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 277,
-      "geography_rejected": 6,
+      "freshness_rejected": 276,
+      "geography_rejected": 5,
       "malformed_rejected": 0
     },
     {
@@ -1470,12 +1446,12 @@
     },
     {
       "company": "Listen Labs",
-      "listing_count": 36,
-      "detail_checked": 36,
+      "listing_count": 37,
+      "detail_checked": 37,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 36,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1504,27 +1480,27 @@
       "detail_checked": 94,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 91,
-      "geography_rejected": 3,
+      "freshness_rejected": 90,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     },
     {
       "company": "Merge Labs",
-      "listing_count": 23,
-      "detail_checked": 23,
+      "listing_count": 24,
+      "detail_checked": 24,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 23,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
       "company": "Meter",
-      "listing_count": 45,
-      "detail_checked": 45,
+      "listing_count": 44,
+      "detail_checked": 44,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 45,
+      "freshness_rejected": 44,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1564,8 +1540,8 @@
       "detail_checked": 133,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 131,
-      "geography_rejected": 2,
+      "freshness_rejected": 130,
+      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
@@ -1630,22 +1606,22 @@
     },
     {
       "company": "Opal Security",
-      "listing_count": 18,
-      "detail_checked": 18,
+      "listing_count": 19,
+      "detail_checked": 19,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 18,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
       "company": "OpenAI",
-      "listing_count": 762,
-      "detail_checked": 762,
-      "accepted": 1,
+      "listing_count": 769,
+      "detail_checked": 769,
+      "accepted": 3,
       "identity_rejected": 0,
-      "freshness_rejected": 745,
-      "geography_rejected": 16,
+      "freshness_rejected": 742,
+      "geography_rejected": 24,
       "malformed_rejected": 0
     },
     {
@@ -1680,9 +1656,9 @@
     },
     {
       "company": "Parafin",
-      "listing_count": 19,
-      "detail_checked": 19,
-      "accepted": 0,
+      "listing_count": 20,
+      "detail_checked": 20,
+      "accepted": 1,
       "identity_rejected": 0,
       "freshness_rejected": 19,
       "geography_rejected": 0,
@@ -1750,11 +1726,11 @@
     },
     {
       "company": "Protera Health",
-      "listing_count": 11,
-      "detail_checked": 11,
+      "listing_count": 10,
+      "detail_checked": 10,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 11,
+      "freshness_rejected": 10,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1824,17 +1800,17 @@
       "detail_checked": 82,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 80,
-      "geography_rejected": 2,
+      "freshness_rejected": 82,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
       "company": "Sierra",
-      "listing_count": 201,
-      "detail_checked": 201,
-      "accepted": 2,
+      "listing_count": 206,
+      "detail_checked": 206,
+      "accepted": 6,
       "identity_rejected": 0,
-      "freshness_rejected": 199,
+      "freshness_rejected": 200,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1850,12 +1826,12 @@
     },
     {
       "company": "SpotOn",
-      "listing_count": 79,
-      "detail_checked": 79,
+      "listing_count": 80,
+      "detail_checked": 80,
       "accepted": 14,
       "identity_rejected": 0,
       "freshness_rejected": 65,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -1894,17 +1870,17 @@
       "detail_checked": 63,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 62,
-      "geography_rejected": 1,
+      "freshness_rejected": 61,
+      "geography_rejected": 2,
       "malformed_rejected": 0
     },
     {
       "company": "Supabase",
-      "listing_count": 59,
-      "detail_checked": 59,
+      "listing_count": 58,
+      "detail_checked": 58,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 59,
+      "freshness_rejected": 58,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1930,11 +1906,11 @@
     },
     {
       "company": "Sweed",
-      "listing_count": 9,
-      "detail_checked": 9,
+      "listing_count": 8,
+      "detail_checked": 8,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 9,
+      "freshness_rejected": 8,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1980,12 +1956,12 @@
     },
     {
       "company": "Tilt",
-      "listing_count": 26,
-      "detail_checked": 26,
+      "listing_count": 27,
+      "detail_checked": 27,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 26,
-      "geography_rejected": 0,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -2060,11 +2036,11 @@
     },
     {
       "company": "Vanta",
-      "listing_count": 108,
-      "detail_checked": 108,
+      "listing_count": 107,
+      "detail_checked": 107,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 106,
+      "freshness_rejected": 105,
       "geography_rejected": 2,
       "malformed_rejected": 0
     },
@@ -2100,12 +2076,12 @@
     },
     {
       "company": "Zip",
-      "listing_count": 124,
-      "detail_checked": 124,
+      "listing_count": 123,
+      "detail_checked": 123,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 122,
-      "geography_rejected": 2,
+      "freshness_rejected": 119,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     }
   ]
