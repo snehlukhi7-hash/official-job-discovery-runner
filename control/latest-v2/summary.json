@@ -1,15 +1,11 @@
 {
   "status": "READY_FOR_QUALIFICATION",
-  "artifact_total": 51,
-  "unique_keys": 51,
+  "artifact_total": 52,
+  "unique_keys": 52,
   "sources_total": 245,
   "source_errors": [
     {
       "company": "Chevron",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Leidos",
       "error": "HTTPError"
     },
     {
@@ -22,10 +18,6 @@
     },
     {
       "company": "Netflix",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Adobe",
       "error": "HTTPError"
     },
     {
@@ -53,10 +45,6 @@
       "error": "HTTPError"
     },
     {
-      "company": "HP",
-      "error": "HTTPError"
-    },
-    {
       "company": "Lenovo",
       "error": "HTTPError"
     },
@@ -70,10 +58,6 @@
     },
     {
       "company": "Intuit",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Autodesk",
       "error": "HTTPError"
     },
     {
@@ -197,6 +181,10 @@
       "error": "HTTPError"
     },
     {
+      "company": "Asurion",
+      "error": "HTTPError"
+    },
+    {
       "company": "DataRobot",
       "error": "HTTPError"
     },
@@ -217,6 +205,10 @@
       "error": "HTTPError"
     },
     {
+      "company": "KBR",
+      "error": "HTTPError"
+    },
+    {
       "company": "PPG",
       "error": "HTTPError"
     },
@@ -234,6 +226,26 @@
     },
     {
       "company": "TransUnion",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Zenith American Solutions",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Sentara Healthcare",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Marsh & McLennan Companies",
+      "error": "HTTPError"
+    },
+    {
+      "company": "HCSC",
+      "error": "HTTPError"
+    },
+    {
+      "company": "Dexcom",
       "error": "HTTPError"
     },
     {
@@ -260,8 +272,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 34,
-      "geography_rejected": 6,
+      "freshness_rejected": 33,
+      "geography_rejected": 7,
       "malformed_rejected": 0
     },
     {
@@ -287,12 +299,12 @@
     {
       "company": "JLL",
       "listing_count": 40,
-      "detail_checked": 39,
+      "detail_checked": 40,
       "accepted": 1,
       "identity_rejected": 0,
       "freshness_rejected": 0,
-      "geography_rejected": 38,
-      "malformed_rejected": 1
+      "geography_rejected": 39,
+      "malformed_rejected": 0
     },
     {
       "company": "ALS Global",
@@ -300,8 +312,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 35,
-      "geography_rejected": 5,
+      "freshness_rejected": 34,
+      "geography_rejected": 6,
       "malformed_rejected": 0
     },
     {
@@ -319,9 +331,9 @@
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
-      "identity_rejected": 8,
+      "identity_rejected": 9,
       "freshness_rejected": 27,
-      "geography_rejected": 5,
+      "geography_rejected": 4,
       "malformed_rejected": 0
     },
     {
@@ -330,8 +342,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 14,
-      "geography_rejected": 26,
+      "freshness_rejected": 13,
+      "geography_rejected": 27,
       "malformed_rejected": 0
     },
     {
@@ -385,6 +397,16 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Leidos",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 40,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Transamerica",
       "listing_count": 40,
       "detail_checked": 40,
@@ -425,13 +447,23 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Adobe",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 0,
+      "freshness_rejected": 39,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Mastercard",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 13,
-      "geography_rejected": 27,
+      "freshness_rejected": 9,
+      "geography_rejected": 31,
       "malformed_rejected": 0
     },
     {
@@ -445,13 +477,23 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Asurion",
-      "listing_count": 10,
-      "detail_checked": 10,
+      "company": "HP",
+      "listing_count": 40,
+      "detail_checked": 40,
       "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 10,
-      "geography_rejected": 0,
+      "identity_rejected": 32,
+      "freshness_rejected": 7,
+      "geography_rejected": 1,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Autodesk",
+      "listing_count": 40,
+      "detail_checked": 40,
+      "accepted": 0,
+      "identity_rejected": 30,
+      "freshness_rejected": 9,
+      "geography_rejected": 1,
       "malformed_rejected": 0
     },
     {
@@ -485,16 +527,6 @@
       "malformed_rejected": 0
     },
     {
-      "company": "KBR",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 32,
-      "geography_rejected": 8,
-      "malformed_rejected": 0
-    },
-    {
       "company": "KION Group",
       "listing_count": 40,
       "detail_checked": 40,
@@ -510,8 +542,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 38,
-      "geography_rejected": 2,
+      "freshness_rejected": 37,
+      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
@@ -526,16 +558,6 @@
     },
     {
       "company": "Waystar",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Zenith American Solutions",
       "listing_count": 40,
       "detail_checked": 40,
       "accepted": 0,
@@ -586,12 +608,12 @@
     },
     {
       "company": "Maersk",
-      "listing_count": 1272,
-      "detail_checked": 1270,
+      "listing_count": 1273,
+      "detail_checked": 1271,
       "accepted": 0,
       "identity_rejected": 0,
       "freshness_rejected": 1234,
-      "geography_rejected": 36,
+      "geography_rejected": 37,
       "malformed_rejected": 2
     },
     {
@@ -608,40 +630,10 @@
       "company": "Jefferson",
       "listing_count": 1242,
       "detail_checked": 1242,
-      "accepted": 1,
+      "accepted": 2,
       "identity_rejected": 0,
-      "freshness_rejected": 1240,
+      "freshness_rejected": 1239,
       "geography_rejected": 1,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Sentara Healthcare",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 40,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Marsh & McLennan Companies",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 35,
-      "geography_rejected": 5,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "HCSC",
-      "listing_count": 114,
-      "detail_checked": 114,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 114,
-      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -660,18 +652,8 @@
       "detail_checked": 40,
       "accepted": 0,
       "identity_rejected": 1,
-      "freshness_rejected": 37,
-      "geography_rejected": 2,
-      "malformed_rejected": 0
-    },
-    {
-      "company": "Dexcom",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 0,
-      "freshness_rejected": 32,
-      "geography_rejected": 8,
+      "freshness_rejected": 36,
+      "geography_rejected": 3,
       "malformed_rejected": 0
     },
     {
