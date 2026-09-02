@@ -30,6 +30,13 @@ class WorkdayAdapter:
         return candidate if re.search(r"\d", candidate) else ""
 
     @staticmethod
+    def _url_req_id(external_path: str) -> str:
+        """Extract the requisition token encoded in the official job URL."""
+        tail = external_path.split("/job/", 1)[1].strip("/")
+        final_segment = tail.rsplit("/", 1)[-1]
+        return final_segment.rsplit("_", 1)[-1].strip()
+
+    @staticmethod
     def _parts(source: Source) -> tuple[str, str, str, str]:
         parsed = urlparse(source.careers_url)
         if parsed.scheme != "https" or ".myworkdayjobs.com" not in parsed.netloc:
@@ -92,6 +99,10 @@ class WorkdayAdapter:
             req_id = self._req_id(item, external_path)
             if not external_path or not req_id or "/job/" not in external_path:
                 self.metrics["malformed_rejected"] += 1
+                continue
+            url_req_id = self._url_req_id(external_path)
+            if not url_req_id or url_req_id.casefold() != req_id.casefold():
+                self.metrics["identity_rejected"] += 1
                 continue
             tail = external_path.split("/job/", 1)[1].strip("/")
             evidence_url = f"https://{host}/wday/cxs/{tenant}/{site}/job/{tail}"
