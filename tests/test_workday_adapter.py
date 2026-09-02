@@ -213,3 +213,39 @@ def test_workday_adapter_paginates_listing_to_source_exhaustion():
     assert [call[2]["offset"] for call in transport.calls if call[0] == "POST"] == [0, 20]
     assert adapter.metrics["listing_count"] == 21
     assert adapter.metrics["detail_checked"] == 21
+
+
+def test_workday_adapter_rejects_url_tail_identity_mismatch():
+    source = Source("CarMax", "workday", "https://carmax.wd1.myworkdayjobs.com/jobs")
+    listing = {
+        "jobPostings": [
+            {
+                "title": "Auto Parts Associate",
+                "externalPath": "/job/Remote/Auto-Parts-Associate_JR-124632",
+                "jobReqId": "JE-124632",
+            }
+        ],
+        "total": 1,
+    }
+    detail_url = (
+        "https://carmax.wd1.myworkdayjobs.com/wday/cxs/carmax/jobs/job/"
+        "Remote/Auto-Parts-Associate_JR-124632"
+    )
+    details = {
+        detail_url: {
+            "jobPostingInfo": {
+                "jobReqId": "JE-124632",
+                "postedOn": "Posted Today",
+                "startDate": "2026-08-31",
+                "location": "Remote, United States",
+                "jobDescription": "Analyze parts operations data.",
+                "timeType": "Full time",
+            }
+        }
+    }
+    adapter = WorkdayAdapter(FakeTransport(listing, details))
+    rows = asyncio.run(
+        adapter.discover(source, datetime(2026, 8, 31, 16, tzinfo=timezone.utc))
+    )
+    assert rows == []
+    assert adapter.metrics["identity_rejected"] == 1
