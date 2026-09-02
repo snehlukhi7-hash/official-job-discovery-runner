@@ -66,10 +66,11 @@ jobs:
             core.setOutput('date', date);
             core.setOutput(
               'skip',
+              // READY is scoped to the batch/date window. Successful runs commit
+              // latest-v2, which changes main's SHA after the artifact is published.
               artifacts.some(item =>
                 !item.expired &&
-                item.name.startsWith(prefix) &&
-                item.workflow_run?.head_sha === context.sha
+                item.name.startsWith(prefix)
               ) ? 'true' : 'false'
             );
       - uses: actions/checkout@v4
