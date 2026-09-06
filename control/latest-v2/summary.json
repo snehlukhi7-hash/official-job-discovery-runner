@@ -57,10 +57,6 @@
       "error": "HTTPError"
     },
     {
-      "company": "Workday",
-      "error": "HTTPError"
-    },
-    {
       "company": "Intuit",
       "error": "HTTPError"
     },
@@ -142,10 +138,6 @@
     },
     {
       "company": "Procter & Gamble",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Boeing",
       "error": "HTTPError"
     },
     {
@@ -241,15 +233,7 @@
       "error": "HTTPError"
     },
     {
-      "company": "Mass General Brigham",
-      "error": "HTTPError"
-    },
-    {
-      "company": "Sentara Healthcare",
-      "error": "HTTPError"
-    },
-    {
-      "company": "HCSC",
+      "company": "Arch Capital Group",
       "error": "HTTPError"
     },
     {
@@ -481,6 +465,16 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Workday",
+      "listing_count": 40,
+      "detail_checked": 36,
+      "accepted": 0,
+      "identity_rejected": 4,
+      "freshness_rejected": 36,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Autodesk",
       "listing_count": 40,
       "detail_checked": 40,
@@ -497,6 +491,16 @@
       "accepted": 1,
       "identity_rejected": 38,
       "freshness_rejected": 1,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Boeing",
+      "listing_count": 40,
+      "detail_checked": 8,
+      "accepted": 0,
+      "identity_rejected": 32,
+      "freshness_rejected": 8,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -581,16 +585,6 @@
       "malformed_rejected": 0
     },
     {
-      "company": "Arch Capital Group",
-      "listing_count": 40,
-      "detail_checked": 40,
-      "accepted": 0,
-      "identity_rejected": 40,
-      "freshness_rejected": 0,
-      "geography_rejected": 0,
-      "malformed_rejected": 0
-    },
-    {
       "company": "Maersk",
       "listing_count": 1319,
       "detail_checked": 975,
@@ -598,6 +592,16 @@
       "identity_rejected": 344,
       "freshness_rejected": 970,
       "geography_rejected": 5,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "Mass General Brigham",
+      "listing_count": 40,
+      "detail_checked": 38,
+      "accepted": 0,
+      "identity_rejected": 2,
+      "freshness_rejected": 38,
+      "geography_rejected": 0,
       "malformed_rejected": 0
     },
     {
@@ -611,12 +615,32 @@
       "malformed_rejected": 0
     },
     {
+      "company": "Sentara Healthcare",
+      "listing_count": 40,
+      "detail_checked": 36,
+      "accepted": 0,
+      "identity_rejected": 4,
+      "freshness_rejected": 36,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
       "company": "Marsh & McLennan Companies",
       "listing_count": 40,
       "detail_checked": 0,
       "accepted": 0,
       "identity_rejected": 40,
       "freshness_rejected": 0,
+      "geography_rejected": 0,
+      "malformed_rejected": 0
+    },
+    {
+      "company": "HCSC",
+      "listing_count": 131,
+      "detail_checked": 46,
+      "accepted": 0,
+      "identity_rejected": 85,
+      "freshness_rejected": 46,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
@@ -1042,11 +1066,11 @@
     },
     {
       "company": "Commure",
-      "listing_count": 77,
-      "detail_checked": 77,
+      "listing_count": 76,
+      "detail_checked": 76,
       "accepted": 0,
       "identity_rejected": 0,
-      "freshness_rejected": 77,
+      "freshness_rejected": 76,
       "geography_rejected": 0,
       "malformed_rejected": 0
     },
