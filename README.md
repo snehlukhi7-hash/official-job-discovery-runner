@@ -1,36 +1,8 @@
-# Official Job Discovery Runner
+# Retired discovery runner
 
-This public project collects only official, public job-listing data and produces a one-day artifact for a separate private qualification process.
+Automatic execution retired on September 8, 2026 at the owner's request.
+Use `snehlukhi7-hash/sneh-job-harvester` as the single production pipeline.
 
-It is intentionally narrow:
+All workflow definitions are preserved under `retired-workflows/` as text, outside GitHub Actions. Source code and historical data are retained for reference. This repository has no active workflow definitions, cron harvests or CI triggers. It is not a source consumed by the current production handoff.
 
-- official ATS discovery only
-- exact requisition identity checks
-- strict Workday `Posted Today` validation using exact live CXS detail
-- current or previous America/New_York date as supporting date-only evidence
-- positive United States geography evidence
-- allowlisted 16-field gzip JSONL output
-- no credentials or personal data
-
-The workflow uses standard public GitHub-hosted runners, validates the entire artifact, and checks for an existing same-window READY artifact before Python setup or installation.
-
-## Local verification
-
-```bash
-python -m pip install -e '.[test]'
-python -m pytest -q
-python scripts/privacy_scan.py .
-python -m compileall -q discovery_runner
-```
-
-## Run discovery
-
-```bash
-discovery-runner run-batch \
-  --sources sources/public_sources.json \
-  --artifact output/jobs.jsonl.gz \
-  --summary-file output/summary.json
-discovery-runner final-qa \
-  --artifact output/jobs.jsonl.gz \
-  --summary-file output/summary.json
-```
+Do not reactivate a parallel pipeline without updating the canonical production integration and obtaining the owner's direction.
